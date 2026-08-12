@@ -28,24 +28,6 @@ layout: default
     </div>
 </section>
 
-<section class="spectrum-section">
-    <div class="spectrum-label">
-        <span>STELLAR SPECTRUM</span>
-        <span>400 nm</span>
-        <span>700 nm</span>
-    </div>
-    <div class="spectrum">
-        <div class="absorption-line line-1"></div>
-        <div class="absorption-line line-2"></div>
-        <div class="absorption-line line-3"></div>
-        <div class="absorption-line line-4"></div>
-        <div class="absorption-line line-5"></div>
-        <div class="absorption-line line-6"></div>
-        <div class="absorption-line line-7"></div>
-        <div class="absorption-line line-8"></div>
-    </div>
-
-</section>
 
 ## Research
 
