@@ -1,5 +1,6 @@
 :root {
     --background: #141313;
+    --background-rgb: 20, 19, 19;
     --surface: #1c1a19;
 
     --text: #d6d1cc;
@@ -213,19 +214,16 @@ footer {
     overflow: hidden;
 
     background-image:
-        /* Dark overlay */
         linear-gradient(
-            rgba(17, 20, 25, 0.35),
-            rgba(17, 20, 25, 0.35)
+            rgba(var(--background-rgb), 0.2),
+            rgba(var(--background-rgb), 0.2)
         ),
-
-        /* Fade into page background */
+        
         linear-gradient(
             180deg,
-            rgba(17, 20, 25, 0) 45%,
-            rgba(17, 20, 25, 1) 100%
+            transparent 45%,
+            var(--background) 100%
         ),
-
         url("/assets/images/cosmic_kiwi_2k.png");
 
     background-size: cover;
