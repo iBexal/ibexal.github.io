@@ -68,7 +68,7 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
 </div>
 <div class="timeline-item">
     <strong>Elaine P. Snowden Astronomy School</strong>: 2024-2025<br>
-    RA for the <a href="https://www.canterbury.ac.nz/news-and-events/regular-events/elaine-p-snowden-astronomy-school">Elaine P. Snowden<a> astronomy school for Year 13 students looking to study astronomy at university. I ran physics and astronomy labs and experiments, and a field trip to use the telescopes at the Ōtehīwai Mt John Observatory in Lake Tekapo, New Zealand.
+    RA for the <a href="https://www.canterbury.ac.nz/news-and-events/regular-events/elaine-p-snowden-astronomy-school">Elaine P. Snowden</a> astronomy school for Year 13 students looking to study astronomy at university. I ran physics and astronomy labs and experiments, and a field trip to use the telescopes at the Ōtehīwai Mt John Observatory in Lake Tekapo, New Zealand.
 </div>
 
 ## Education
