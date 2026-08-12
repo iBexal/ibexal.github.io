@@ -38,13 +38,13 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
  - <a href="https://s5collab.github.io">Southern Stellar Stream Spectroscopic Survey</a> (S5) collaboration
  - The <a href="https://www.galah-survey.org">GALAH and GALAH-2</a> surveys
 
+<h2>Outreach</h2>
 <div class="left-image">
     <img
         src="/assets/images/ttt.webp"
         alt="Townsend Teece Telescope"
     >
     <div class="text">
-        <h2>Outreach</h2>
         <p>
             I was heavily involved in outreach at the University of Canterbury,
             and continue to be involved in astronomy outreach at Macquarie University.
