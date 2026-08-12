@@ -3,9 +3,20 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+<div class="about-intro">
+    <div class="about-text">
+        <p>
+            I'm an astronomer interested in understanding the formation and evolution
+            of the Milky Way through stellar spectroscopy.
+        </p>
+    </div>
+    <img
+        src="/assets/images/me.jpeg"
+        alt="Picture of Ethan Bull next to the sign to the entrance of VISTA"
+        class="about-photo"
+    >
+</div>
 
-I'm an astronomer interested in understanding the formation and evolution
-of the Milky Way through stellar spectroscopy.
 
 ## Interests
 
