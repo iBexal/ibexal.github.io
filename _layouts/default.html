@@ -20,14 +20,11 @@
 
 <header>
     <div class="container">
-
         <a class="site-title" href="{{ '/' | relative_url }}">
             {{ site.title }}
         </a>
-
         <nav>
             <a href="{{ '/' | relative_url }}">Home</a>
-
             {% for path in site.header_pages %}
                 {% assign page_item = site.pages | where: "path", path | first %}
                 {% if page_item %}
@@ -37,15 +34,12 @@
                 {% endif %}
             {% endfor %}
         </nav>
-
     </div>
 </header>
 
 
 <main>
-
     {{ content }}
-
 </main>
 
 
