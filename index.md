@@ -20,12 +20,12 @@ layout: default
                 <a href="/research/" class="button">
                     Research
                 </a>
-                <a href="/about/" class="button">
+                <a href="/about/" class="button button-secondary">
                     About me
                 </a>
-                <a href="https://github.com/iBexal" class="button button-secondary"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://orcid.org/0009-0000-5954-1862" class="button button-secondary"><i class="fa-brands fa-orcid"></i></a>
-                <a href="https://www.linkedin.com/" class="button button-secondary"><i class="fa-brands fa-square-linkedin"></i></a>
+                <a href="https://github.com/iBexal" class="button button-quick"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://orcid.org/0009-0000-5954-1862" class="button button-quick"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.linkedin.com/" class="button button-quick"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </div>
