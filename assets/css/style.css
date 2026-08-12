@@ -90,7 +90,11 @@ main > .container {
     padding-top: 60px;
 }
 
-h1,
+h1 {
+    color: var(--accent);
+    line-height: 1.2;
+}
+
 h2,
 h3,
 h4 {
