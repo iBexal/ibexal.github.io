@@ -63,18 +63,25 @@ t-SNE on GALAH+ DR3
 <hr>
 <h1>Research Experiences</h1>
 <h2>Conferences</h2>
-    
-
+<div class="timeline-item">
+    <strong>ASA 2026</strong>
+</div>
 <h2>Workshops</h2>
 <div class="timeline-item">
-    <strong>Milky Way Halo workshop</strong> - Macquarie University, <i>Hosted by Ethan Bull and Heather Sinclair Wentworth</i>
+    <strong>Harley Wood School</strong> - ANU Kioloa Campus, <i>2026</i>
+    <p>
+        Two day astronomy workshop for research students, focussing on <strong>Big Data</strong> and statistical methods.
+    </p>
+</div>
+<div class="timeline-item">
+    <strong>Milky Way Halo workshop</strong> - Macquarie University, <i>2026</i>
     <p>
         Hosted a Galactic Halo workshop at Macquarie University, with attendees coming from Sydney, Canberra, and Christchurch. The workshop focussed on collaboration between attendees, with discussion periods between talks.
     </p>
 </div>
 
 <div class="timeline-item">
-    <strong>Infrared Telluric removal for GBS stars</strong> - Universidad Diego Portales, <i>Hosted by Clare Worley and Paula Jofre</i>
+    <strong>Infrared Telluric removal for GBS stars</strong> - Universidad Diego Portales, <i>2024</i>
     <p>
         Attended a workshop on telluric removal in infrared stellar spectra, with applications on Gaia Benchmark Stars observed by the CRIRES spectrograph.
     </p>
