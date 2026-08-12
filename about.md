@@ -41,19 +41,30 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
 ## Outreach
 I was heavily involved in outreach at the University of Canterbury, and continue to be involved in astronomy outreach at Macquarie University.
 
-**Townsend Teece Telescope**: 2023-2025
+<div class="timeline-item">
+<strong>Townsend Teece Telescope</strong>: 2023-2025<br>
 Senior Observer at the Townsend Teece Telescope, as a part of the University of Canterbury. This involved stargazing on winter Friday nights with the historic telescope after its restoration in April of 2023, a tradition continued since its installation at the old UC campus in 1896.
+</div
 
-**Castle Hill Matariki Stargazing**: 2023-2024
+<div class="timeline-item">
+<strong>Castle Hill Matariki Stargazing</strong>: 2023-2024<br>
+Public stargazing at Castle Hill, New Zealand during the Matariki public holiday.
+<div>
 
 
 ## Education
 
-**PhD - Astronomy**
+<div class="timeline-item">
+<strong>PhD - Astronomy</strong><br>
 Macquarie University, 2025–present
+</div>
 
-**Master of Science (Distinction) - Astronomy**
+<div class="timeline-item">
+<strong>Master of Science (Distinction) - Astronomy</strong><br>
 University of Canterbury, 2024-2025
+</div>
 
-**Bachelor of Science (Hons) - Astronomy**
+<div class="timeline-item">
+<strong>Bachelor of Science (Hons) - Astronomy</strong><br>
 University of Canterbury, 2019-2023
+</div>
