@@ -188,11 +188,9 @@ footer {
     position: relative;
     overflow: hidden;
 
-    margin-top: -60px;
-    margin-left: calc((900px - 100vw) / 2);
-    margin-right: calc((900px - 100vw) / 2);
+    width: 100%;
 
-    padding: 80px;
+    padding: 80px 0;
 
     background-image:
         linear-gradient(
@@ -205,4 +203,12 @@ footer {
 
     background-size: cover;
     background-position: center;
+}
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
 }
