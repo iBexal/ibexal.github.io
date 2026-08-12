@@ -198,7 +198,7 @@ footer {
     background-image:
         linear-gradient(
             180deg,
-            rgba(13, 17, 23, 0) 66%,
+            rgba(13, 17, 23, 0.33) 66%,
             rgba(13, 17, 23, 1) 100%
         ),
         url("/assets/images/cosmic_kiwi_2k.png");
