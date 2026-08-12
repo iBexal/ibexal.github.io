@@ -180,6 +180,20 @@ footer {
     h1 {
         font-size: 2rem;
     }
+    
+}
+
+@media (max-width: 600px) {
+    .about-intro {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .about-photo {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 
