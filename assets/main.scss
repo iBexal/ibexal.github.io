@@ -1,0 +1,75 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --background: #0d1117;
+  --surface: #161b22;
+  --text: #c9d1d9;
+  --heading: #f0f6fc;
+  --accent: #58a6ff;
+  --link: #79c0ff;
+  --muted: #8b949e;
+  --border: #30363d;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.site-header {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--heading);
+}
+
+.site-nav .page-link {
+  color: var(--text);
+}
+
+.site-nav .page-link:hover {
+  color: var(--accent);
+}
+
+.page-content {
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+}
+
+a,
+a:visited {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.site-footer {
+  background-color: var(--background);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer-heading {
+  color: var(--heading);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+}
