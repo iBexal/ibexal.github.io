@@ -49,43 +49,39 @@ layout: default
     </p>
     <hr>
     <h2>Featured Projects</h2>
-    <h3>
-        Maximising the Scientific Returns of Spectroscopic Surveys
-        Using Machine Learning
-    </h3>
-    <p>
-        Applying <em>The Cannon</em> to archival AAOmega spectra,
-        and AAOmega spectra taken for the S5 survey.
-    </p>
+    <div class="timeline-item">
+    <h3>Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning</h3><br>
+        Applying <em>The Cannon</em> to archival AAOmega spectra, and AAOmega spectra taken for the S5 survey.
     <p>
         <a href="/research/#cannon-project">
             Read more →
         </a>
     </p>
+    </div>
+    <div class="timeline-item">
     <h3>
         Chemical Signatures of Exoplanet Host Stars
-    </h3>
-    <p>
+    </h3><br>
         Determining the chemical abundances of stars hosting
         exoplanets of differing masses.
-    </p>
     <p>
         <a href="/research/#exoplanets">
             Read more →
         </a>
     </p>
+    </div>
+    <div class="timeline-item">
     <h3>
         Extracting Milky Way Stellar Populations using t-SNE
-    </h3>
-    <p>
+    </h3><br>
         Applying t-SNE to GALAH+ DR3 to identify the Milky Way halo,
         thick disc, and thin disc.
-    </p>
     <p>
         <a href="/research/#tsne">
             Read more →
         </a>
     </p>
+    </div>
     <hr>
     <h2>Career - so far</h2>
     <ul>
