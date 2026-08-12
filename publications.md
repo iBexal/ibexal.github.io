@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: page
 title: Publications
 permalink: /publications/
 ---
+
 **Your Name**, Coauthor et al. (2026)
 
 *Title of your paper*
