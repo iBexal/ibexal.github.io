@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-# Research and Projects
+<h1>Research Projects</h1>
 
 <h2 id="cannon-project">Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning</h2>
 
@@ -59,3 +59,22 @@ I use spectral synthesis to derive stellar parameters and chemical abundances fo
 <h2 id="tsne">Extracting Milky Way Stellar Populations Using t-SNE</h2>
 
 t-SNE on GALAH+ DR3
+
+<hr>
+<h1>Research Experiences</h1>
+<h2>Conferences</h2>
+    
+
+<h2>Workshops</h2>
+<div class="timeline-item">
+    <h3>Milky Way Halo workshop</h3> - <i>Hosted by Ethan Bull and Heather Sinclair Wentworth</i>
+    <p>
+        Hosted a Galactic Halo workshop at Macquarie University, with attendees coming from Sydney, Canberra, and Christchurch. The workshop focussed on collaboration between attendees, with discussion periods between talks.
+    </p>
+    </div>
+    <div class="timeline-item">
+    <h3>Infrared Telluric removal for GBS stars</h3> - <i>Hosted by Clare Worley and Paula Jofre</i>
+    <p>
+        Attended a workshop on telluric removal in infrared stellar spectra, with applications on Gaia Benchmark Stars observed by the CRIRES spectrograph.
+    </p>
+    </div>

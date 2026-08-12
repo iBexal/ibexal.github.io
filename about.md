@@ -71,7 +71,19 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
     RA for the <a href="https://www.canterbury.ac.nz/news-and-events/regular-events/elaine-p-snowden-astronomy-school">Elaine P. Snowden</a> astronomy school for Year 13 students looking to study astronomy at university. I ran physics and astronomy labs and experiments, and a field trip to use the telescopes at the Ōtehīwai Mt John Observatory in Lake Tekapo, New Zealand.
 </div>
 
-## Education
+<h2>Teaching</h2>
+<div class="timeline-item">
+    <strong>Course Development</strong> - ASTR211<br>
+    Built Python labs to teach basic echelle spectroscopic reduction and analysis.
+</div>
+
+<div class="timeline-item">
+    <strong>Tutoring</strong>
+    <li>ASTR112: 2023-2024
+    <li>ASTR211: 2023-2024
+</div>
+
+<h2>Education</h2>
 
 <div class="timeline-item">
 <strong>PhD - Astronomy</strong><br>
@@ -79,7 +91,7 @@ Macquarie University, 2025–present
 </div>
 
 <div class="timeline-item">
-<strong>Master of Science (Distinction) - Astronomy</strong><br>
+<strong>Master of Science - Astronomy</strong><br>
 University of Canterbury, 2024-2025
 </div>
 
