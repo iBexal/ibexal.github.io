@@ -1,16 +1,16 @@
 :root {
     --background: #121313;
     --background-rgb: 18, 19, 19;
-    --surface: #1b1b19;
+    --surface: #1b1a19;
 
-    --text: #cbc9c2;
-    --heading: #f0eee6;
+    --text: #cbc8c2;
+    --heading: #f1eee8;
 
-    --accent: #a58a52;
-    --link: #c0a66a;
+    --accent: #aa805d;
+    --link: #c49a76;
 
-    --muted: #8d8b83;
-    --border: #34332e;
+    --muted: #8d8984;
+    --border: #35322f;
 }
 
 
