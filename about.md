@@ -57,12 +57,12 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
             2023, a tradition continued since its installation at the old UC
             campus in 1896.
         </div>
-        <div class="timeline-item">
-            <strong>Castle Hill Matariki Stargazing</strong>: 2023–2024<br>
-            Public stargazing at Castle Hill, New Zealand during the Matariki
-            public holiday.
-        </div>
     </div>
+</div>
+<div class="timeline-item">
+    <strong>Castle Hill Matariki Stargazing</strong>: 2023–2024<br>
+    Public stargazing at Castle Hill, New Zealand during the Matariki
+    public holiday.
 </div>
 
 ## Education
