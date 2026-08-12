@@ -1,7 +1,9 @@
-title: Ethan Bull
+title: "Ethan Bull"
+description: "PhD Student at Macquarie University, Sydney | Galactic Archaeology | Stellar Spectroscopy | Statistical Methods"
 
-description: My Website
+theme: minima
 
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
+header_pages:
+  - about.md
+  - research.md
+  - publications.md
