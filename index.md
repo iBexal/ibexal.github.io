@@ -26,9 +26,10 @@ layout: default
                     </a>
                 </div>
                 <div class="hero-quick-links">
+                    Quick Links:
                     <a href="https://github.com/iBexal" class="button button-quick"><i class="fa-brands fa-square-github"></i></a>
                     <a href="https://orcid.org/0009-0000-5954-1862" class="button button-quick"><i class="fa-brands fa-orcid"></i></a>
-                    <a href="https://www.linkedin.com/" class="button button-quick"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/ethan-bull-281878246/" class="button button-quick"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
