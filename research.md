@@ -3,7 +3,7 @@ layout: default
 title: Research
 permalink: /research/
 ---
-
+<div class="container">
 <h2 id="cannon-project">Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning</h2>
 
 My current research investigates how machine learning can be used to extract
@@ -39,3 +39,4 @@ Abundances of exoplanet stars
 <h2 id="tsne">Extracting Milky Way Stellar Populations Using t-SNE</h2>
 
 t-SNE on GALAH+ DR3
+</div>

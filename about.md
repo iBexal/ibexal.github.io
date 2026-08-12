@@ -3,7 +3,7 @@ layout: default
 title: About Me
 permalink: /about/
 ---
-
+<div class="container">
 
 I'm an astronomer interested in understanding the formation and evolution
 of the Milky Way through stellar spectroscopy.
@@ -23,3 +23,4 @@ University Name, XXXX–XXXX
 - Machine learning
 - Spectroscopic surveys
 - Stellar populations
+</div>
