@@ -5,7 +5,6 @@ permalink: /research/
 ---
 <h1>Research and Projects</h1>
 
-
 <h2 id="cannon-project">Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning</h2>
 
 My current research investigates how machine learning can be used to extract

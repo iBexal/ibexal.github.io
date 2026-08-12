@@ -4,7 +4,7 @@
     --surface: #1b1a19;
 
     --text: #cbc8c2;
-    --heading: #f1eee8;
+    --heading: #f2eadb;
 
     --accent: #aa805d;
     --link: #c49a76;
@@ -90,11 +90,7 @@ main > .container {
     padding-top: 60px;
 }
 
-h1 {
-    color: var(--accent);
-    line-height: 1.2;
-}
-
+h1,
 h2,
 h3,
 h4 {

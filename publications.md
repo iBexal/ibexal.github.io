@@ -5,6 +5,7 @@ permalink: /publications/
 ---
 
 # Publications
+
 **E. Bull** & C. C. Worley (*in prep*). *Distinguishing the Chemical Abundances of Exoplanet Host
 Stars*. Publications of the Astronomical Society of Australia, [doi:xx.xxxx/](/publications/)
 
