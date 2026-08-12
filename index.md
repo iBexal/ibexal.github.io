@@ -87,11 +87,11 @@ layout: default
         </a>
     </p>
     <hr>
-    <h2>Latest</h2>
+    <h2>Career - so far</h2>
     <ul>
-        <li><strong>2026</strong> — Started my PhD in Astronomy &amp; Astrophysics</li>
-        <li><strong>2026</strong> — Working with archival AAOmega spectroscopy</li>
-        <li><strong>2025</strong> — Previous project / achievement</li>
+        <li><strong>2025-Now</strong> — PhD in Astronomy @ <i>Macquarie University</i></li>
+        <li><strong>2024</strong> - New Zealand Prime Minister's Scholarship for Latin America</li>
+        <li><strong>2019-2025</strong> - BSc (Hons) & MSc in Astronomy @ <i>University of Canterbury</i></li>
     </ul>
     <hr>
     <h2>Find me!</h2>

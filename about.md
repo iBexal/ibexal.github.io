@@ -38,13 +38,21 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
  - <a href="https://s5collab.github.io">Southern Stellar Stream Spectroscopic Survey</a> (S5) collaboration
  - The <a href="https://www.galah-survey.org">GALAH and GALAH-2</a> surveys
 
+## Outreach
+I was heavily involved in outreach at the University of Canterbury, and continue to be involved in astronomy outreach at Macquarie University.
+
+**Townsend Teece Telescope**: 2023-2025
+Senior Observer at the Townsend Teece Telescope, as a part of the University of Canterbury. This involved stargazing on winter Friday nights with the historic telescope after its restoration in April of 2023, a tradition continued since its installation at the old UC campus in 1896.
+
+**Castle Hill Matariki Stargazing**: 2023-2024
+
 
 ## Education
 
-**PhD in Astronomy & Astrophysics**
+**PhD - Astronomy**
 Macquarie University, 2025–present
 
-**Master of Science - Astronomy**
+**Master of Science (Distinction) - Astronomy**
 University of Canterbury, 2024-2025
 
 **Bachelor of Science (Hons) - Astronomy**
