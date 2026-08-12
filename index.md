@@ -1,10 +1,10 @@
 ---
-layout: home
+layout: page
 ---
 
-# Your Name
+# Rehehehe
 
-**Astronomer · PhD Student · Researcher**
+**Astronomy PhD Stduent · Galactic Archaeology**
 
 Welcome to my website.
 
