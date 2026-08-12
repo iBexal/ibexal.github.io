@@ -11,7 +11,7 @@ layout: default
         </p>
         <h1>Ethan Bull</h1>
         <p class="hero-subtitle">
-            PhD Researcher in Astronomy &amp; Astrophysics
+            PhD Student in Astronomy &amp; Astrophysics
         </p>
         <p class="hero-description">
             Exploring the formation and evolution of the Milky Way
