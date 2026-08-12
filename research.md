@@ -67,14 +67,14 @@ t-SNE on GALAH+ DR3
 
 <h2>Workshops</h2>
 <div class="timeline-item">
-    <strong>Milky Way Halo workshop</strong> - <i>Hosted by Ethan Bull and Heather Sinclair Wentworth</i>
+    <strong>Milky Way Halo workshop</strong> - Macquarie University, <i>Hosted by Ethan Bull and Heather Sinclair Wentworth</i>
     <p>
         Hosted a Galactic Halo workshop at Macquarie University, with attendees coming from Sydney, Canberra, and Christchurch. The workshop focussed on collaboration between attendees, with discussion periods between talks.
     </p>
 </div>
 
 <div class="timeline-item">
-    <strong>Infrared Telluric removal for GBS stars</strong> - <i>Hosted by Clare Worley and Paula Jofre</i>
+    <strong>Infrared Telluric removal for GBS stars</strong> - Universidad Diego Portales, <i>Hosted by Clare Worley and Paula Jofre</i>
     <p>
         Attended a workshop on telluric removal in infrared stellar spectra, with applications on Gaia Benchmark Stars observed by the CRIRES spectrograph.
     </p>
