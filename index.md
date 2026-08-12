@@ -20,9 +20,12 @@ layout: default
                 <a href="/research/" class="button">
                     Research
                 </a>
-                <a href="/about/" class="button button-secondary">
+                <a href="/about/" class="button">
                     About me
                 </a>
+                <a href="https://github.com/iBexal" class="button-secondary"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://orcid.org/0009-0000-5954-1862" class="button-secondary"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.linkedin.com/" class="button-secondary"><i class="fa-brands fa-square-linkedin"></i></a>
             </div>
         </div>
     </div>
@@ -85,8 +88,7 @@ layout: default
         <li><strong>2025</strong> — Previous project / achievement</li>
     </ul>
     <hr>
-    <h2>Contact</h2>
-    <p>You can find me on:</p>
+    <h2>Find me!</h2>
     <ul>
         <li><a href="https://github.com/iBexal">GitHub</a></li>
         <li><a href="https://scholar.google.com/">Google Scholar</a></li>
