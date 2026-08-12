@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rehehehe
+title: Home
 ---
 
 **Astronomy PhD Stduent · Galactic Archaeology**
