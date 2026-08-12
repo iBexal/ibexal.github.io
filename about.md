@@ -44,12 +44,12 @@ I was heavily involved in outreach at the University of Canterbury, and continue
 <div class="timeline-item">
 <strong>Townsend Teece Telescope</strong>: 2023-2025<br>
 Senior Observer at the Townsend Teece Telescope, as a part of the University of Canterbury. This involved stargazing on winter Friday nights with the historic telescope after its restoration in April of 2023, a tradition continued since its installation at the old UC campus in 1896.
-</div
+</div>
 
 <div class="timeline-item">
 <strong>Castle Hill Matariki Stargazing</strong>: 2023-2024<br>
 Public stargazing at Castle Hill, New Zealand during the Matariki public holiday.
-<div>
+</div>
 
 
 ## Education
