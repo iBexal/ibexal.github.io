@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="hero">
-    <div class="container">
+    <div class="hero-inner">
         <div class="hero-content">
             <p class="hero-kicker">
                 ASTRONOMY · SPECTROSCOPY · GALACTIC ARCHAEOLOGY
