@@ -95,6 +95,6 @@ layout: default
         <li><a href="https://github.com/iBexal"><i class="fa-brands fa-square-github"></i> GitHub</a></li>
         <li><a href="https://orcid.org/0009-0000-5954-1862"><i class="fa-brands fa-orcid"></i> ORCiD</a></li>
         <li><a href="https://scholar.google.com/"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
-        <li><a href="https://www.linkedin.com/"><i class="fa-brains fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
     </ul>
 </div>
