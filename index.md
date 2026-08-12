@@ -95,8 +95,8 @@ layout: default
     <hr>
     <h2>Find me!</h2>
     <ul>
-        <li><a href="https://github.com/iBexal">GitHub</a></li>
-        <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://github.com/iBexal"><i class="fa-brands fa-square-github"></i> GitHub</a></li>
+        <li><a href="https://scholar.google.com/"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/"><i class="fa-brains fa-linkedin"></i> LinkedIn</a></li>
     </ul>
 </div>
