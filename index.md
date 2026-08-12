@@ -38,10 +38,6 @@ layout: default
             Learn more about my past research →
         </a>
     </p>
-    <h3>Surveys and Collaborations</h3>
-    <p>
-        I am a member of the <a href="https://www.4most.eu/cms/science/galconsurv/">4MOST S1 Milky Way Halo Low Resolution Survey</a>, the <a href="https://s5collab.github.io">Souther Stellar Streams Spectroscopic Survey</a> (S5) collaboration, and the <a href="https://www.galah-survey.org">GALAH</a> survey.
-    </p>
     <hr>
     <h2>Featured Projects</h2>
     <h3>
