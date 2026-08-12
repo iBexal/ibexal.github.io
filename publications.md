@@ -4,10 +4,6 @@ title: Publications
 permalink: /publications/
 ---
 
-# Publications
-
-## Publications
-
 **Your Name**, Coauthor et al. (2026)
 
 *Title of your paper*

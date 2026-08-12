@@ -4,8 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-# Research
-
 ## Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning
 
 My current research investigates how machine learning can be used to extract

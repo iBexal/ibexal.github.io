@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Rehehehe
 ---
-
-# Rehehehe
 
 **Astronomy PhD Stduent · Galactic Archaeology**
 

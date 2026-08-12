@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-# About Me
 
 I'm an astronomer interested in understanding the formation and evolution
 of the Milky Way through stellar spectroscopy.
