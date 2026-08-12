@@ -198,17 +198,14 @@ footer {
     background-image:
         /* Dark overlay */
         linear-gradient(
-            90deg,
-            rgba(13, 17, 23, 0.90) 0%,
-            rgba(13, 17, 23, 0.70) 40%,
-            rgba(13, 17, 23, 0.35) 75%,
-            rgba(13, 17, 23, 0.15) 100%
-        ),
+            rgba(17, 20, 25, 0.45),
+            rgba(17, 20, 25, 0.45)
+        )
 
         /* Fade into page background */
         linear-gradient(
             180deg,
-            rgba(17, 20, 25, 0) 50%,
+            rgba(17, 20, 25, 0) 66%,
             rgba(17, 20, 25, 1) 100%
         ),
 
