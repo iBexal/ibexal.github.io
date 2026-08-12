@@ -38,19 +38,32 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
  - <a href="https://s5collab.github.io">Southern Stellar Stream Spectroscopic Survey</a> (S5) collaboration
  - The <a href="https://www.galah-survey.org">GALAH and GALAH-2</a> surveys
 
-## Outreach
-I was heavily involved in outreach at the University of Canterbury, and continue to be involved in astronomy outreach at Macquarie University.
-
-<div class="timeline-item">
-<strong>Townsend Teece Telescope</strong>: 2023-2025<br>
-Senior Observer at the Townsend Teece Telescope, as a part of the University of Canterbury. This involved stargazing on winter Friday nights with the historic telescope after its restoration in April of 2023, a tradition continued since its installation at the old UC campus in 1896.
+<div class="left-image">
+    <img
+        src="/assets/images/ttt.webp"
+        alt="Townsend Teece Telescope"
+    >
+    <div class="text">
+        <h2>Outreach</h2>
+        <p>
+            I was heavily involved in outreach at the University of Canterbury,
+            and continue to be involved in astronomy outreach at Macquarie University.
+        </p>
+        <div class="timeline-item">
+            <strong>Townsend Teece Telescope</strong>: 2023–2025<br>
+            Senior Observer at the Townsend Teece Telescope, as a part of the
+            University of Canterbury. This involved stargazing on winter Friday
+            nights with the historic telescope after its restoration in April of
+            2023, a tradition continued since its installation at the old UC
+            campus in 1896.
+        </div>
+        <div class="timeline-item">
+            <strong>Castle Hill Matariki Stargazing</strong>: 2023–2024<br>
+            Public stargazing at Castle Hill, New Zealand during the Matariki
+            public holiday.
+        </div>
+    </div>
 </div>
-
-<div class="timeline-item">
-<strong>Castle Hill Matariki Stargazing</strong>: 2023-2024<br>
-Public stargazing at Castle Hill, New Zealand during the Matariki public holiday.
-</div>
-
 
 ## Education
 

@@ -438,3 +438,22 @@ footer {
 .timeline-item p {
     margin: 0 0 8px 0;
 }
+
+.left-image {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.left-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.left-image .text {
+    flex: 1;
+}
