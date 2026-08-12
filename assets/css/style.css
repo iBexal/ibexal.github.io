@@ -323,21 +323,23 @@ footer {
 }
 
 .button-quick {
+    width: 36px;
+    height: 36px;
+
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
 
-    padding: 7px 14px;
+    padding: 0;
 
     background: transparent;
-    color: var(--text) !important;
+    color: var(--muted) !important;
 
     border: 1px solid var(--border);
     border-radius: 6px;
 
     font-size: 0.9rem;
-    font-weight: 500;
-    line-height: 1.4;
+    line-height: 1;
 
     text-decoration: none;
 
@@ -346,6 +348,10 @@ footer {
         border-color 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
+}
+
+.button-quick i {
+    font-size: 1.2rem;
 }
 
 .button-quick:hover {
