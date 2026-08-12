@@ -39,16 +39,16 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
  - The <a href="https://www.galah-survey.org">GALAH and GALAH-2</a> surveys
 
 <h2>Outreach</h2>
+<p>
+    I was heavily involved in outreach at the University of Canterbury,
+    and continue to be involved in astronomy outreach at Macquarie University.
+</p>
 <div class="left-image">
     <img
         src="/assets/images/ttt.webp"
         alt="Townsend Teece Telescope"
     >
     <div class="text">
-        <p>
-            I was heavily involved in outreach at the University of Canterbury,
-            and continue to be involved in astronomy outreach at Macquarie University.
-        </p>
         <div class="timeline-item">
             <strong>Townsend Teece Telescope</strong>: 2023–2025<br>
             Senior Observer at the Townsend Teece Telescope, as a part of the
