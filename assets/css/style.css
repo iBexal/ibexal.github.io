@@ -196,17 +196,22 @@ footer {
     overflow: hidden;
 
     background-image:
-        /* Overall darkening */
+        /* Dark overlay */
         linear-gradient(
-            rgba(13, 17, 23, 0.45),
-            rgba(13, 17, 23, 0.45)
+            90deg,
+            rgba(13, 17, 23, 0.90) 0%,
+            rgba(13, 17, 23, 0.70) 40%,
+            rgba(13, 17, 23, 0.35) 75%,
+            rgba(13, 17, 23, 0.15) 100%
         ),
-        /* Fade bottom into page */
+
+        /* Fade into page background */
         linear-gradient(
             180deg,
-            rgba(17, 20, 25, 0) 55%,
+            rgba(17, 20, 25, 0) 50%,
             rgba(17, 20, 25, 1) 100%
         ),
+
         url("/assets/images/cosmic_kiwi_2k.png");
 
     background-size: cover;
