@@ -5,6 +5,9 @@ repository: ibexal/ibexal.github.io
 
 theme: minima
 
+sass:
+  style: compressed
+
 header_pages:
   - about.md
   - research.md
