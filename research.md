@@ -35,3 +35,7 @@ information from well-characterised training samples to archival spectra.
 <h2 id="exoplanets">Distinguishing the Chemical Abundances of Exoplanet Host Stars</h2>
 
 Abundances of exoplanet stars
+
+<h2 id="tsne">Extracting Milky Way Stellar Populations Using t-SNE</h2>
+
+t-SNE on GALAH+ DR3

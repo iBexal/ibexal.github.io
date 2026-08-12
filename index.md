@@ -25,17 +25,21 @@ My research currently focuses on producing stellar parameters and abundances fro
 
 ### Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning
 
-Applying *The Cannon* to historic AAOmega spectra, and AAOmega spectra taken for the S5 survey.
+Applying *The Cannon* to archival AAOmega spectra, and AAOmega spectra taken for the S5 survey.
 
 [Read more →](research.md#cannon-project)
 
 ### Chemical Signatures of Exoplanet Host Stars
 
-A short description of another project.
+Determining the chemical abundances of stars hosting exoplanets of differing masses.
 
-[Read more →](research.md)
+[Read more →](research.md#exoplanets)
 
 ### Extrating Milky Way Stellar Populations using t-SNE
+
+Applying t-SNE to GALAH+ DR3 to identify the Milky Way halo, thick disc, and thin disc.
+
+[Read more →](research.md#tsne)
 
 ---
 
