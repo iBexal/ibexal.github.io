@@ -71,10 +71,11 @@ t-SNE on GALAH+ DR3
     <p>
         Hosted a Galactic Halo workshop at Macquarie University, with attendees coming from Sydney, Canberra, and Christchurch. The workshop focussed on collaboration between attendees, with discussion periods between talks.
     </p>
-    </div>
-    <div class="timeline-item">
+</div>
+
+<div class="timeline-item">
     <h3>Infrared Telluric removal for GBS stars</h3> - <i>Hosted by Clare Worley and Paula Jofre</i>
     <p>
         Attended a workshop on telluric removal in infrared stellar spectra, with applications on Gaia Benchmark Stars observed by the CRIRES spectrograph.
     </p>
-    </div>
+</div>
