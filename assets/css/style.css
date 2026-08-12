@@ -82,6 +82,10 @@ main {
     padding-bottom: 80px;
 }
 
+main > .container {
+    padding-top: 60px;
+}
+
 h1,
 h2,
 h3,
