@@ -269,10 +269,20 @@ footer {
 
 .hero-links {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 30px;
     margin-top: 30px;
 }
 
+.hero-main-links {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-quick-links {
+    display: flex;
+    gap: 8px;
+}
 
 .button {
     display: inline-block;
