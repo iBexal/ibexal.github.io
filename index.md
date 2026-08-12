@@ -15,8 +15,7 @@ surveys.
 
 ## Research
 
-My research focuses on extracting stellar parameters and chemical abundances
-from archival spectroscopic data using machine learning techniques.
+My research currently focuses on producing stellar parameters and abundances from large spectrosopic surveys. I have also done work with stellar spectral synthesis for exoplanet host stars, and using statistical methods to extract Milky Way populations.
 
 [Learn more about my research →](research.md)
 
@@ -24,17 +23,19 @@ from archival spectroscopic data using machine learning techniques.
 
 ## Featured Projects
 
-### Project One
+### Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning
 
-A short description of your first project.
+Applying *The Cannon* to historic AAOmega spectra, and AAOmega spectra taken for the S5 survey.
 
-[Read more →](research.md)
+[Read more →](research.md#cannon-project)
 
-### Project Two
+### Chemical Signatures of Exoplanet Host Stars
 
 A short description of another project.
 
 [Read more →](research.md)
+
+### Extrating Milky Way Stellar Populations using t-SNE
 
 ---
 
