@@ -1,16 +1,16 @@
 :root {
-    --background: #141313;
-    --background-rgb: 20, 19, 19;
-    --surface: #1c1a19;
+    --background: #121116;
+    --background-rgb: 18, 17, 22;
+    --surface: #1b1921;
 
-    --text: #d6d1cc;
-    --heading: #f2eee9;
+    --text: #cbc8d2;
+    --heading: #f0edf5;
 
-    --accent: #d97745;
-    --link: #e49a6a;
+    --accent: #9b78c9;
+    --link: #b99cde;
 
-    --muted: #99918a;
-    --border: #37312d;
+    --muted: #918b9b;
+    --border: #35303d;
 }
 
 
@@ -218,7 +218,7 @@ footer {
             rgba(var(--background-rgb), 0.2),
             rgba(var(--background-rgb), 0.2)
         ),
-        
+
         linear-gradient(
             180deg,
             transparent 45%,
