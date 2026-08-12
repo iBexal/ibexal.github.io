@@ -6,7 +6,7 @@ layout: default
     <div class="hero-inner">
         <div class="hero-content">
             <p class="hero-kicker">
-                ASTRONOMY · SPECTROSCOPY · GALACTIC ARCHAEOLOGY
+                STELLAR SPECTROSCOPY · MACHINE LEARNING · GALACTIC ARCHAEOLOGY
             </p>
             <h1>Ethan Bull</h1>
             <p class="hero-subtitle">
@@ -29,18 +29,18 @@ layout: default
 </section>
 
 <div class="container">
-    <h2>Research</h2>
+    <h2>Interests and Research</h2>
     <p>
-        My research currently focuses on producing stellar parameters
-        and abundances from large spectroscopic surveys. I have also
-        done work with stellar spectral synthesis for exoplanet host
-        stars, and using statistical methods to extract Milky Way
-        populations.
+        My interests focus around stellar spectroscopy and Galactic archaeology. I am particularly interested in increasing the robustness and efficiency of spectral synthesis, using methods such as data-driven modelling with <i>The Cannon</i>. I am also interested in <b>Big Data</b>, doing Galactic archaeology on big spectroscopic surveys with dimensionality reduction such as PCA and t-SNE.
     </p>
     <p>
         <a href="/research/">
-            Learn more about my research →
+            Learn more about my past research →
         </a>
+    </p>
+    <h3>Surveys and Collaborations</h3>
+    <p>
+        I am a member of the <a href="https://www.4most.eu/cms/science/galconsurv/">4MOST S1 Milky Way Halo Low Resolution Survey</a>, the <a href="https://s5collab.github.io">Souther Stellar Streams Spectroscopic Survey</a> (S5) collaboration, and the <a href="https://www.galah-survey.org">GALAH</a> survey.
     </p>
     <hr>
     <h2>Featured Projects</h2>
