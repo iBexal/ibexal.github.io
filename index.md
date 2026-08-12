@@ -1,17 +1,51 @@
 ---
+
 layout: default
-title: Home
----
-
-**Astronomy PhD Stduent · Galactic Archaeology**
-
-Welcome to my website.
-
-I'm interested in astronomy, stellar spectroscopy, Galactic archaeology,
-and using machine learning to extract information from large spectroscopic
-surveys.
 
 ---
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-kicker">
+            ASTRONOMY · SPECTROSCOPY · GALACTIC ARCHAEOLOGY
+        </p>
+        <h1>Ethan Bull</h1>
+        <p class="hero-subtitle">
+            PhD Researcher in Astronomy &amp; Astrophysics
+        </p>
+        <p class="hero-description">
+            Exploring the formation and evolution of the Milky Way
+            through stellar spectroscopy and machine learning.
+        </p>
+        <div class="hero-links">
+            <a href="/research/" class="button">
+                Research
+            </a>
+            <a href="/about/" class="button button-secondary">
+                About me
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="spectrum-section">
+    <div class="spectrum-label">
+        <span>STELLAR SPECTRUM</span>
+        <span>400 nm</span>
+        <span>700 nm</span>
+    </div>
+    <div class="spectrum">
+        <div class="absorption-line line-1"></div>
+        <div class="absorption-line line-2"></div>
+        <div class="absorption-line line-3"></div>
+        <div class="absorption-line line-4"></div>
+        <div class="absorption-line line-5"></div>
+        <div class="absorption-line line-6"></div>
+        <div class="absorption-line line-7"></div>
+        <div class="absorption-line line-8"></div>
+    </div>
+
+</section>
 
 ## Research
 
