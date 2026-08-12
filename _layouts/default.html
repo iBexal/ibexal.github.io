@@ -1,57 +1,59 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
 
-  <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }}
-    {% else %}
-      {{ site.title }}
-    {% endif %}
-  </title>
-
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="wrapper">
+<header>
+    <div class="container">
 
-      <a class="site-title" href="{{ '/' | relative_url }}">
-        {{ site.title }}
-      </a>
+        <a class="site-title" href="{{ '/' | relative_url }}">
+            {{ site.title }}
+        </a>
 
-      <nav class="site-nav">
-        {% for path in site.header_pages %}
-          {% assign my_page = site.pages | where: "path", path | first %}
-          {% if my_page.title %}
-            <a class="page-link"
-               href="{{ my_page.url | relative_url }}">
-              {{ my_page.title }}
-            </a>
-          {% endif %}
-        {% endfor %}
-      </nav>
+        <nav>
+            <a href="{{ '/' | relative_url }}">Home</a>
+
+            {% for path in site.header_pages %}
+                {% assign page_item = site.pages | where: "path", path | first %}
+                {% if page_item %}
+                    <a href="{{ page_item.url | relative_url }}">
+                        {{ page_item.title }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </nav>
 
     </div>
-  </header>
+</header>
 
-  <main class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <p>{{ site.description }}</p>
+<main class="container">
+
+    {{ content }}
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>{{ site.description }}</p>
     </div>
-  </footer>
+</footer>
 
 </body>
 

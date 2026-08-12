@@ -3,8 +3,6 @@ description: "PhD Student at Macquarie University, Sydney | Galactic Archaeology
 
 repository: ibexal/ibexal.github.io
 
-theme: minima
-
 header_pages:
   - about.md
   - research.md
