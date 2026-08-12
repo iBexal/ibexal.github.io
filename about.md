@@ -40,29 +40,35 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
 
 <h2>Outreach</h2>
 <p>
-    I was heavily involved in outreach at the University of Canterbury,
-    and continue to be involved in astronomy outreach at Macquarie University.
+    I have been involved in astronomy outreach throughout my studies at both the University of Canterbury and Macquarie University, from public stargazing and telescope observing to teaching astronomy and physics to aspiring students. I currently continue this work at the Macquarie Observatory.
 </p>
+<div class="timeline-item">
+    <strong>Macquarie Observatory</strong>: 2026-<br>
+    Volunteer for public and private stargazing nights at the Macquarie Observatory, with experience operating multiple telescopes througout the observatory.
+</div>
 <div class="left-image">
     <img
         src="/assets/images/ttt.webp"
-        alt="Townsend Teece Telescope"
+        alt="Townsend Teece Telescope Observers on the catwalk around the dome of the Townsend Teece Telescope"
     >
     <div class="text">
         <div class="timeline-item">
             <strong>Townsend Teece Telescope</strong>: 2023–2025<br>
             Senior Observer at the Townsend Teece Telescope, as a part of the
-            University of Canterbury. This involved stargazing on winter Friday
-            nights with the historic telescope after its restoration in April of
-            2023, a tradition continued since its installation at the old UC
-            campus in 1896.
+            University of Canterbury. Following its restoration in April of
+            2023, I led winter Friday night public stargazing; a tradition continued since its installation at the old UC
+            campus in 1896, as well as for private bookings.
         </div>
     </div>
 </div>
 <div class="timeline-item">
     <strong>Castle Hill Matariki Stargazing</strong>: 2023–2024<br>
     Public stargazing at Castle Hill, New Zealand during the Matariki
-    public holiday.
+    public holiday, with portable C11 telescopes, Dobsonians, and live imaging with DSLR cameras.
+</div>
+<div class="timeline-item">
+    <strong>Elaine P. Snowden Astronomy School</strong>: 2024-2025<br>
+    RA for the <a href="https://www.canterbury.ac.nz/news-and-events/regular-events/elaine-p-snowden-astronomy-school">Elaine P. Snowden<a> astronomy school for Year 13 students looking to study astronomy at university. I ran physics and astronomy labs and experiments, and a field trip to use the telescopes at the Ōtehīwai Mt John Observatory in Lake Tekapo, New Zealand.
 </div>
 
 ## Education
