@@ -48,41 +48,47 @@ layout: default
         </a>
     </p>
     <hr>
-    <h2>Featured Projects</h2>
-    <div class="timeline-item">
-    <h3>Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning</h3><br>
+
+<h2>Featured Projects</h2>
+
+<div class="timeline-item">
+    <h3>Maximising the Scientific Returns of Spectroscopic Surveys Using Machine Learning</h3>
+    <p>
         Applying <em>The Cannon</em> to archival AAOmega spectra, and AAOmega spectra taken for the S5 survey.
+    </p>
     <p>
         <a href="/research/#cannon-project">
             Read more →
         </a>
     </p>
-    </div>
-    <div class="timeline-item">
-    <h3>
-        Chemical Signatures of Exoplanet Host Stars
-    </h3><br>
+</div>
+
+<div class="timeline-item">
+    <h3>Chemical Signatures of Exoplanet Host Stars</h3>
+    <p>
         Determining the chemical abundances of stars hosting
         exoplanets of differing masses.
+    </p>
     <p>
         <a href="/research/#exoplanets">
             Read more →
         </a>
     </p>
-    </div>
-    <div class="timeline-item">
-    <h3>
-        Extracting Milky Way Stellar Populations using t-SNE
-    </h3><br>
+</div>
+
+<div class="timeline-item">
+    <h3>Extracting Milky Way Stellar Populations using t-SNE</h3>
+    <p>
         Applying t-SNE to GALAH+ DR3 to identify the Milky Way halo,
         thick disc, and thin disc.
+    </p>
     <p>
         <a href="/research/#tsne">
             Read more →
         </a>
     </p>
-    </div>
-    <hr>
+</div>
+<hr>
     <h2>Career - so far</h2>
     <ul>
         <li><strong>2025-Now</strong> — PhD in Astronomy @ <i>Macquarie University</i></li>

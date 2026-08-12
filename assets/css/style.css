@@ -426,3 +426,11 @@ footer {
 .timeline-item {
     margin-bottom: 20px;
 }
+
+.timeline-item h3 {
+    margin: 0 0 6px 0;
+}
+
+.timeline-item p {
+    margin: 0 0 8px 0;
+}
