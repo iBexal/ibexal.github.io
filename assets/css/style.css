@@ -281,18 +281,19 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
-    }
 
-    .left-image img.square,
-    .left-image img.wide,
-    .left-image img.tall,
-    .right-image img.square,
-    .right-image img.wide,
-    .right-image img.tall {
         width: 100%;
         max-width: 100%;
-        height: auto;
+        min-width: 0;
     }
+
+    .left-image img,
+    .right-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
 }
 
 
