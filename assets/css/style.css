@@ -209,6 +209,8 @@ footer {
         left: 0;
         right: 0;
 
+        width: 200px;
+
         flex-direction: column;
         align-items: flex-end;
         gap: 0;
