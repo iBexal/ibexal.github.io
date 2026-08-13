@@ -194,14 +194,19 @@ footer {
    ------------------------- */
 
 @media (max-width: 700px) {
+
+    /* Header / Burger Menu */
+
     header .container {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     .menu-toggle {
         display: block;
     }
+
     nav {
         display: none;
         position: absolute;
@@ -220,16 +225,18 @@ footer {
         background: var(--background);
         border-bottom: 1px solid var(--border);
     }
+
     nav.open {
         display: flex;
     }
+
     nav a {
         padding: 9px 5px;
         text-align: right;
     }
-}
 
-@media (max-width: 700px) {
+
+    /* Hero */
 
     .hero-links {
         flex-direction: column;
@@ -251,9 +258,10 @@ footer {
         width: 100%;
         flex-wrap: wrap;
     }
-}
 
-@media (max-width: 700px) {
+
+    /* About */
+
     .about-intro {
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -263,6 +271,27 @@ footer {
     .about-photo {
         width: 180px;
         height: 180px;
+    }
+
+
+    /* Left / Right Images */
+
+    .left-image,
+    .right-image {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .left-image img.square,
+    .left-image img.wide,
+    .left-image img.tall,
+    .right-image img.square,
+    .right-image img.wide,
+    .right-image img.tall {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
 
