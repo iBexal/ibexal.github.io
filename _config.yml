@@ -3,6 +3,8 @@ description: "Understanding the formation and evolution of the Milky Way using s
 
 repository: ibexal/ibexal.github.io
 
+theme: null
+
 header_pages:
   - about.md
   - research.md

@@ -77,10 +77,6 @@ Spectroscopic modelling of Beta Cephei type pulsator HD 111123 to determine puls
 
 <hr>
 
-<h1 id="projects">Other Projects</h1>
-
-<hr>
-
 <h1 id="experiences">Research Engagement</h1>
 
 <h2>Contributed Talks and Posters</h2>
@@ -112,3 +108,21 @@ Spectroscopic modelling of Beta Cephei type pulsator HD 111123 to determine puls
         Attended a workshop on telluric removal in infrared stellar spectra, with applications on Gaia Benchmark Stars observed by the CRIRES spectrograph.
     </p>
 </div>
+<hr>
+
+<h1 id="projects">Other Projects</h1>
+
+<h2>Deianira</h2>
+<div class="timeline-item">
+<p>
+Deianira is a reduction pipeline built for the HERCULES spectrograph, at the UC Mount John Observatory. It replaces the "post-reduction" phase of MEGARA, the full reduction pipeline for HERCULES.
+</p>
+<p>
+Deianira takes wavelength calibrated orders and does an attempt at flat fielding, and merges each spectral order. It also does continuum fitting, radial velocity corrections, and interpolates spectra onto a shared wavelength vector.
+</p>
+<a href="https://github.com/qai11/Deianira">Check it out here!</a>
+
+</div>
+
+<h2>PyReduce</h2>
+<p>PyReduce is an echelle reduction program</p>
