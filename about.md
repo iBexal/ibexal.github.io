@@ -79,7 +79,7 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
 </div>
 
 <div class="timeline-item">
-    <strong>Tutoring</strong><br>
+    <strong>Tutoring</strong>
     <ul>
         <li>ASTR112: 2023-2024</li>
         <li>ASTR211: 2023-2024</li>
