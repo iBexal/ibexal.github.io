@@ -73,21 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.addEventListener("click", function () {
         nav.classList.toggle("open");
     });
-
-    /* Research dropdown on mobile */
-    const dropdownToggle = document.querySelector(".nav-dropdown-toggle");
-    const dropdown = document.querySelector(".nav-dropdown");
-
-    dropdownToggle.addEventListener("click", function (event) {
-        /*
-         * Only prevent the Research link from navigating on mobile.
-         * On desktop, Research remains a normal link.
-         */
-        if (window.innerWidth <= 700) {
-            event.preventDefault();
-            dropdown.classList.toggle("open");
-        }
-    });
 });
 </script>
 
