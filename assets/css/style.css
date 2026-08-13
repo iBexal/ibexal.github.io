@@ -57,6 +57,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    position: relative;
 }
 
 .site-title {
@@ -193,7 +194,6 @@ footer {
    ------------------------- */
 
 @media (max-width: 700px) {
-
     header .container {
         flex-direction: row;
         align-items: center;
@@ -208,9 +208,12 @@ footer {
         top: 100%;
         left: 0;
         right: 0;
+
         flex-direction: column;
         gap: 0;
+
         padding: 10px 20px 15px;
+
         background: var(--background);
         border-bottom: 1px solid var(--border);
     }
@@ -222,7 +225,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .hero-links {
         flex-direction: column;
@@ -246,7 +249,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .about-intro {
         flex-direction: column-reverse;
         align-items: flex-start;
