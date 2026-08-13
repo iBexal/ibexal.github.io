@@ -50,6 +50,7 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
     <img
         src="/assets/images/ttt.webp"
         alt="Townsend Teece Telescope Observers on the catwalk around the dome of the Townsend Teece Telescope"
+        class="wide"
     >
     <div class="text">
         <div class="timeline-item">
