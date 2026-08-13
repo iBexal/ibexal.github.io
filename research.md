@@ -66,6 +66,7 @@ t-SNE on GALAH+ DR3
 <div class="timeline-item">
     <strong>ASA 2026</strong>
 </div>
+
 <h2>Workshops</h2>
 <div class="timeline-item">
     <strong>Harley Wood School</strong> - ANU Kioloa Campus, <i>2026</i>
