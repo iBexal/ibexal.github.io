@@ -75,7 +75,7 @@ I am a member of multiple Galactic spectroscopic surveys and collaborations:
 <h2>Teaching</h2>
 <div class="timeline-item">
     <strong>Course Development</strong> - ASTR211<br>
-    Built Python labs to teach basic echelle spectroscopic reduction and analysis.
+    Designed and built Python labs to teach echelle spectroscopic reduction and analysis.
 </div>
 
 <div class="timeline-item">
