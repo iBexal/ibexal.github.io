@@ -99,7 +99,7 @@ nav a:hover {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -18px;
 
     min-width: 240px;
     padding: 10px 12px;
