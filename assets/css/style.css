@@ -189,10 +189,6 @@ footer {
 }
 
 
-/* -------------------------
-   Mobile
-   ------------------------- */
-
 @media (max-width: 700px) {
 
     /* Header / Burger Menu */
@@ -279,12 +275,21 @@ footer {
     .left-image,
     .right-image {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        align-items: stretch;
 
         width: 100%;
         max-width: 100%;
         min-width: 0;
+
+        gap: 20px;
+    }
+
+    .left-image .text,
+    .right-image .text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: none;
     }
 
     .left-image img,
