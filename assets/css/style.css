@@ -81,6 +81,11 @@ nav a:hover {
     color: var(--accent);
 }
 
+
+/* -------------------------
+   Research Dropdown
+   ------------------------- */
+
 .nav-dropdown {
     position: relative;
     text-align: right;
@@ -109,19 +114,20 @@ nav a:hover {
 
 .nav-dropdown-menu a {
     display: block;
-    padding: 8px 15px;
+    width: 100%;
+    padding: 8px 0;
     white-space: nowrap;
     text-align: right;
 }
 
 .nav-dropdown-menu a:hover {
     background: var(--surface);
-    text-align: right;
 }
 
 .nav-dropdown:hover .nav-dropdown-menu {
     display: block;
 }
+
 
 .menu-toggle {
     display: none;
@@ -139,6 +145,7 @@ nav a:hover {
     background: var(--text);
     transition: 0.2s ease;
 }
+
 
 /* -------------------------
    Main content
@@ -198,6 +205,7 @@ a:hover {
     scroll-margin-top: 15vh;
 }
 
+
 /* -------------------------
    Horizontal lines
    ------------------------- */
@@ -241,6 +249,7 @@ footer {
 /* =========================
    HERO
    ========================= */
+
 .hero {
     min-height: 550px;
 
@@ -278,6 +287,7 @@ footer {
 .hero-content {
     width: 100%;
 }
+
 
 /* Hero text */
 
@@ -346,11 +356,12 @@ footer {
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-    white-space: nowrap;    
+    white-space: nowrap;
 
     color: var(--muted);
     font-size: 0.9rem;
 }
+
 
 .button {
     display: inline-block;
@@ -391,6 +402,7 @@ footer {
     color: var(--link) !important;
 }
 
+
 .button-quick {
     width: 42px;
     height: 42px;
@@ -428,6 +440,11 @@ footer {
     transform: scale(1.05);
 }
 
+
+/* =========================
+   ABOUT
+   ========================= */
+
 .about-intro {
     display: flex;
     align-items: center;
@@ -458,6 +475,7 @@ footer {
     border: 1px solid var(--border);
 }
 
+
 .timeline-item {
     margin-bottom: 20px;
 }
@@ -469,6 +487,11 @@ footer {
 .timeline-item p {
     margin: 0 0 8px 0;
 }
+
+
+/* =========================
+   LEFT / RIGHT IMAGES
+   ========================= */
 
 .left-image,
 .right-image {
@@ -525,6 +548,9 @@ footer {
 }
 
 
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
@@ -568,6 +594,9 @@ footer {
         text-align: right;
     }
 
+
+    /* Research Dropdown */
+
     .nav-dropdown {
         width: 100%;
     }
@@ -577,18 +606,30 @@ footer {
     }
 
     .nav-dropdown-menu {
-        display: block;
+        display: none;
         position: static;
-        text-align: right;
+
         width: 100%;
         min-width: 0;
+
         padding: 0;
+
         background: transparent;
         border: 0;
+
+        text-align: right;
+    }
+
+    .nav-dropdown.open .nav-dropdown-menu {
+        display: block;
     }
 
     .nav-dropdown-menu a {
+        display: block;
+        width: 100%;
+
         padding: 7px 5px 7px 15px;
+
         font-size: 0.9rem;
         text-align: right;
     }
