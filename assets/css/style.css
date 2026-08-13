@@ -81,6 +81,48 @@ nav a:hover {
     color: var(--accent);
 }
 
+.nav-dropdown {
+    position: relative;
+    text-align: right;
+}
+
+.nav-dropdown-toggle {
+    display: block;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    min-width: 220px;
+    padding: 8px 0;
+
+    background: var(--background);
+    border: none;
+
+    z-index: 999;
+
+    text-align: right;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.nav-dropdown-menu a:hover {
+    background: var(--surface);
+    text-align: right;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -148,6 +190,13 @@ a:hover {
     color: var(--accent);
 }
 
+[id] {
+    scroll-margin-top: 10vh;
+}
+
+.research-topic {
+    scroll-margin-top: 15vh;
+}
 
 /* -------------------------
    Horizontal lines
@@ -516,6 +565,31 @@ footer {
 
     nav a {
         padding: 9px 5px;
+        text-align: right;
+    }
+
+    .nav-dropdown {
+        width: 100%;
+    }
+
+    .nav-dropdown-toggle {
+        padding: 9px 5px;
+    }
+
+    .nav-dropdown-menu {
+        display: block;
+        position: static;
+        text-align: right;
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+        background: transparent;
+        border: 0;
+    }
+
+    .nav-dropdown-menu a {
+        padding: 7px 5px 7px 15px;
+        font-size: 0.9rem;
         text-align: right;
     }
 

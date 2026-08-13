@@ -40,7 +40,7 @@ layout: default
 <div class="container">
     <h2>Interests and Research</h2>
     <p>
-        My interests focus around stellar spectroscopy and Galactic archaeology. I am particularly interested in increasing the robustness and efficiency of spectral synthesis, using methods such as data-driven modelling with <i>The Cannon</i>. I am also interested in <b>Big Data</b>, doing Galactic archaeology on big spectroscopic surveys with dimensionality reduction such as PCA and t-SNE.
+        My interests focus around stellar spectroscopy and Galactic archaeology. I am particularly interested in increasing the robustness and efficiency of spectral synthesis, using machine learning such as data-driven models with <i>The Cannon</i>. I am also interested in using <b>Big Data</b> and doing Galactic archaeology on big spectroscopic surveys with statistical methods, such as PCA and t-SNE.
     </p>
     <p>
         <a href="/research/">

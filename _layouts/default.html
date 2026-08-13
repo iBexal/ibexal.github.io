@@ -30,15 +30,20 @@
             <span></span>
         </button>
         <nav>
-            <a href="{{ '/' | relative_url }}">Home</a>
-            {% for path in site.header_pages %}
-                {% assign page_item = site.pages | where: "path", path | first %}
-                {% if page_item %}
-                    <a href="{{ page_item.url | relative_url }}">
-                        {{ page_item.title }}
-                    </a>
-                {% endif %}
-            {% endfor %}
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+
+            <div class="nav-dropdown">
+                <a href="/research/" class="nav-dropdown-toggle">Research</a>
+
+                <div class="nav-dropdown-menu">
+                    <a href="/research/#research">My Research</a>
+                    <a href="/research/#projects">Projects</a>
+                    <a href="/research/#experiences">Research Engagement</a>
+                </div>
+            </div>
+
+            <a href="/publications/">Publications</a>
         </nav>
     </div>
 </header>
