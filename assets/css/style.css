@@ -223,6 +223,30 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+    .hero-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hero-main-links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hero-quick-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
     .about-intro {
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -329,17 +353,22 @@ footer {
     align-items: center;
     gap: 30px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .hero-main-links {
     display: flex;
+    align-items: center;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .hero-quick-links {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
+    white-space: nowrap;    
 
     color: var(--muted);
     font-size: 0.9rem;
