@@ -1,0 +1,4 @@
+# Ruby / Bundler
+.bundle/
+vendor/bundle/
+*.gem
