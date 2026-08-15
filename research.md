@@ -71,7 +71,7 @@ I use spectral synthesis to derive stellar parameters and chemical abundances fo
 I apply the statistical method t-SNE (t-distributed Stochastic Neighbour Embedding) and clustering algorithm OPTICS to GALAH+ DR3 chemical abundances to distinguish the Milky Way high-alph disk, low-alpha disk, and the Galactic stellar halo. t-SNE finds populations in the Milky Way using only GALAH chemical abundances, that are kinematically consistent. <a href="/publications#tsne-proceeding">Read the proceedings here</a>.
 
 <hr>
-<h2 id="pulsation" class="research-topic>"Pulsation Modes of the Beta Cephei Star HD 111123</h2>
+<h2 id="pulsation" class="research-topic">Pulsation Modes of the Beta Cephei Star HD 111123</h2>
 
 Spectroscopic modelling of Beta Cephei type pulsator HD 111123 to determine pulsations modes and frequencies.
 
