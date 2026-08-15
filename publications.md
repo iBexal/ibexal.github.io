@@ -11,4 +11,4 @@ Stars*. Publications of the Astronomical Society of Australia, [doi:xx.xxxx/](/p
 
 <strong id="tnse-proceeding">E. Bull</strong> & C. C. Worley (2024). *Extracting Milky Way stellar populations using t-SNE*. 
 Proceedings of the International Astronomical Union, 2024;20(S395):269-272, <a href="https://doi.org/10.1017/S1743921325000705">doi:10.1017/S1743921325000705</a>
-[ADS - Broken](https://ui.adsabs.harvard.edu/abs/10.1017/S1743921325000705)
+<a href="https://ui.adsabs.harvard.edu/abs/10.1017/S1743921325000705">NASA ADS (Broken)</a> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=EMgR0bcAAAAJ&citation_for_view=EMgR0bcAAAAJ:u-x6o8ySG0sC">Google Scholar</a>
