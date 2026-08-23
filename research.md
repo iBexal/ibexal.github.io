@@ -112,7 +112,19 @@ Spectroscopic modelling of Beta Cephei type pulsator HD 111123 to determine puls
 
 <h1 id="projects">Other Projects</h1>
 
-<h2>Deianira</h2>
+
+<h2 id="remus">ReMUS</h2>
+<p>ReMUS is an echelle reduction program built to reduce echelle spectra taken from the Macquarie Unversity Teaching and Learning spectrograph. While it is build for this spectrograph, it in theory should be able to be configured for many one-shot echelle spectrographs (assuming the grating angle and echelle groove density are known).</p>
+<p>ReMUS currently does order tracing, time-based interpolated wavelength calibration, and an attempt at cosmic ray removal.</p>
+<p>Future features planned include:
+<ul>
+    <li>Flat-fielding, with white light calibrations</li>
+    <li>Order merging (See <a href="/research#deianira">Deianira</a>)</li>
+</ul>
+</p>
+<a href="https://github.com/iBexal/ReMUS">Check ReMUS out here!</a>
+
+<h2 id="deianira">Deianira</h2>
 <div class="timeline-item">
 <p>
 Deianira is a reduction pipeline built for the HERCULES spectrograph, at the UC Mount John Observatory. It replaces the "post-reduction" phase of MEGARA, the full reduction pipeline for HERCULES.
@@ -123,6 +135,3 @@ Deianira takes wavelength calibrated orders and does an attempt at flat fielding
 <a href="https://github.com/qai11/Deianira">Check it out here!</a>
 
 </div>
-
-<h2>PyReduce</h2>
-<p>PyReduce is an echelle reduction program</p>
