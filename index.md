@@ -77,6 +77,18 @@ layout: default
 </div>
 
 <div class="timeline-item">
+    <h3>ReMUS: Reduction for the Macquarie University Spectrograph</h3>
+        <p>
+            A reduction pipeline for echelle spectra taken from the Macquarie University spectrograph
+        </p>
+        <p>
+            <a href="/research#remus">
+                Read more →
+            </a>
+        </p>
+</div>
+<!--
+<div class="timeline-item">
     <h3>Extracting Milky Way Stellar Populations using t-SNE</h3>
     <p>
         Applying t-SNE to GALAH+ DR3 to identify the Milky Way halo,
@@ -88,6 +100,7 @@ layout: default
         </a>
     </p>
 </div>
+-->
 <hr>
     <h2>Career - so far</h2>
     <ul>
