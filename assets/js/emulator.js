@@ -142,11 +142,11 @@ function mountPlayground(root, P) {
       <div class="pg-sliders pg-abund"></div>
       ${split.length ? `<label class="tie pg-tie"><input type="checkbox" id="pg-tie" checked> Tie [Mg/Fe], [Si/Fe] and [Ti/Fe] to [α/Fe]</label>
         <p class="hint">In this model [α/Fe] sets O, Ne, S, Ar and Ca, so it drives the Ca II triplet. Mg, Si and Ti have their own labels; untie them to move their lines alone.</p>` : ''}
-      <div class="ctl k"><label for="pg-k">Components kept, K <output id="pg-out-k">${K}</output></label><input type="range" id="pg-k" min="1" max="${K}" step="1" value="${K}"></div>
+      <div class="ctl k"><div class="row"><label for="pg-k">Components kept, K</label><span class="val"><input class="num" type="number" step="any" min="1" max="${K}" id="pg-num-k" aria-label="Components kept, K"></span></div><input type="range" id="pg-k" min="1" max="${K}" step="1" value="${K}"></div>
       ${C ? `<label class="tie pg-cmp"><input type="checkbox" id="pg-cmp"> ${P.compare.title}</label>` : ''}
     </div>
     <div class="pg-plots">
-      <div class="legend" id="pg-legend"></div>
+      <div class="pg-legend-row"><div class="legend" id="pg-legend"></div><label class="tie pg-lock"><input type="checkbox" id="pg-lock"> Lock y-axis to 0–1</label></div>
       <div class="chart" id="pg-spec"></div>
       <div class="chart" id="pg-res"></div>
       <p class="ctitle pg-bars-title">Network outputs: c<sub>k</sub> / scale<sub>k</sub> for each of the ${K} components</p>
@@ -156,15 +156,19 @@ function mountPlayground(root, P) {
   const q = sel => root.querySelector(sel);
   const inputs = labels.map((lab, i) => { const [name, unit, step] = INFO[lab] || [lab, '', 0.01];
     const w = document.createElement('div'); w.className = 'ctl';
-    w.innerHTML = `<label for="pg-sl-${i}">${name} <output id="pg-out-${i}"></output></label><input type="range" id="pg-sl-${i}" min="${E.lo[i]}" max="${E.hi[i]}" step="${step}" value="${P.presets[d0].theta[i]}">`;
-    q(ABUND.includes(lab) ? '.pg-abund' : '.pg-stellar').appendChild(w); return w.querySelector('input'); });
-  const kIn = q('#pg-k'), tie = q('#pg-tie'), cmp = q('#pg-cmp');
+    w.innerHTML = `<div class="row"><label for="pg-sl-${i}">${name}</label><span class="val"><input class="num" type="number" step="any" min="${E.lo[i]}" max="${E.hi[i]}" id="pg-num-${i}" aria-label="${name} value">${unit ? `<span class="unit">${unit}</span>` : ''}</span></div>` +
+      `<input type="range" id="pg-sl-${i}" min="${E.lo[i]}" max="${E.hi[i]}" step="${step}" value="${P.presets[d0].theta[i]}">`;
+    q(ABUND.includes(lab) ? '.pg-abund' : '.pg-stellar').appendChild(w); return w.querySelector('input[type=range]'); });
+  const kIn = q('#pg-k'), tie = q('#pg-tie'), cmp = q('#pg-cmp'), lock = q('#pg-lock');
+  const nums = labels.map((_, i) => q('#pg-num-' + i)), kNum = q('#pg-num-k');
+  const decs = labels.map(lab => (INFO[lab] || [0, 0, 0, 2])[3]);
   let S = null;
 
   const drawSpec = chart(q('#pg-spec'), host => { if (!S) return;
     const ys = [S.r.full, S.kk < K ? S.r.part : null, S.cmp ? S.cmp.full : null].filter(Boolean);
     let lo = Infinity, hi = -Infinity; for (const a of ys) for (const v of a) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
-    const F = frame(host, { height: host.clientWidth < 520 ? 200 : 250, x: { min: WL[0], max: WL[n - 1], label: '' }, y: { min: Math.max(0, lo - 0.04), max: Math.min(1.15, hi + 0.04), label: 'normalised flux', n: 5 }, margin: { b: 22 }, aria: 'Emulated spectrum' });
+    const F = frame(host, { height: host.clientWidth < 520 ? 200 : 250, x: { min: WL[0], max: WL[n - 1], label: '' }, y: lock.checked ? { min: 0, max: 1.02, ticks: [0, 0.2, 0.4, 0.6, 0.8, 1], label: 'normalised flux' }   // locked: 0-1 (a little headroom for the continuum)
+      : { min: Math.max(0, lo - 0.04), max: Math.min(1.15, hi + 0.04), label: 'normalised flux', n: 5 }, margin: { b: 22 }, aria: 'Emulated spectrum' });
     for (const l of CAT) vline(F, l);
     const ser = [];
     if (S.cmp) { line(F, wl, Array.from(S.cmp.full), 'var(--ink-3)', 1.3, { 'stroke-dasharray': '4 3' }); ser.push({ xs: wl, ys: Array.from(S.cmp.full), color: 'var(--ink-3)', name: P.compare.short }); }
@@ -189,10 +193,10 @@ function mountPlayground(root, P) {
     pointHover(F, pts, Math.max(12, F.pw / K)); });
 
   function update() {
-    if (tie) { split.forEach(i => { inputs[i].disabled = tie.checked; if (tie.checked) inputs[i].value = inputs[ia].value; }); }
+    if (tie) { split.forEach(i => { inputs[i].disabled = nums[i].disabled = tie.checked; if (tie.checked) inputs[i].value = inputs[ia].value; }); }
     const theta = inputs.map(x => +x.value), kk = +kIn.value;
-    labels.forEach((lab, i) => { const [, unit, , dec] = INFO[lab] || ['', '', 0, 2]; q('#pg-out-' + i).textContent = theta[i].toFixed(dec) + (unit ? ' ' + unit : ''); });
-    q('#pg-out-k').textContent = kk;
+    labels.forEach((lab, i) => { if (document.activeElement !== nums[i]) nums[i].value = theta[i].toFixed(decs[i]); });
+    if (document.activeElement !== kNum) kNum.value = kk;
     const t0 = performance.now(); const r = emulate(E, theta, kk); const ms = performance.now() - t0;
     const c = cmp && cmp.checked ? emulate(C, theta.slice(0, C.lo.length), C.K) : null;
     let se = 0, sc = 0; for (let p = 0; p < n; p++) { se += (r.part[p] - r.full[p]) ** 2; if (c) sc += (c.full[p] - r.full[p]) ** 2; }
@@ -211,7 +215,21 @@ function mountPlayground(root, P) {
     root.querySelectorAll('[data-preset]').forEach(o => o.setAttribute('aria-pressed', o === b ? 'true' : 'false')); update(); }));
   inputs.concat([kIn]).forEach(x => x.addEventListener('input', () => {
     if (x !== kIn) root.querySelectorAll('[data-preset]').forEach(o => o.setAttribute('aria-pressed', 'false')); update(); }));
+  // a typed value is clamped to the slider's range and rounded to its nearest step, then handled like a drag
+  function commit(num, slider, dec) {
+    const v = parseFloat(String(num.value).replace('−', '-'));
+    if (!isFinite(v)) { num.value = (+slider.value).toFixed(dec); return; }   // not a number: put the current value back
+    const lo = +slider.min, hi = +slider.max, st = +slider.step;
+    slider.value = Math.min(hi, Math.max(lo, lo + Math.round((v - lo) / st) * st)).toFixed(dec);
+    slider.dispatchEvent(new Event('input'));
+    num.value = (+slider.value).toFixed(dec);
+  }
+  nums.concat([kNum]).forEach((num, j) => {
+    const slider = j < nums.length ? inputs[j] : kIn, dec = j < nums.length ? decs[j] : 0;
+    num.addEventListener('change', () => commit(num, slider, dec));
+    num.addEventListener('keydown', e => { if (e.key === 'Enter') num.blur(); }); });
   [tie, cmp].forEach(x => x && x.addEventListener('change', update));
+  lock.addEventListener('change', () => drawSpec());
   emulate(E, P.presets[d0].theta, K);   // warm-up, so the displayed timing is not the first (slow) call
   update();
 }

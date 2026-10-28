@@ -33,8 +33,16 @@ button.chip:focus-visible, .play input:focus-visible { outline: 2px solid var(--
 .play { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; margin: 18px 0 26px; }
 .play-grid { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 22px; }
 .play .controls { display: grid; gap: 10px; align-content: start; }
-.play .ctl label { display: flex; justify-content: space-between; font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; color: var(--ink); }
-.play .ctl label output { font-family: var(--font-mono); font-weight: 400; font-size: 0.8rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.play .ctl .row { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+.play .ctl label { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; color: var(--ink); }
+.play .ctl .val { display: inline-flex; align-items: baseline; gap: 4px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-2); }
+/* the value is a typed-in box: looks like text until hovered or focused */
+.play .ctl input.num { width: 4.6em; font: inherit; font-variant-numeric: tabular-nums; color: var(--ink-2); text-align: right; background: transparent;
+  border: 1px solid transparent; border-bottom-color: var(--rule); border-radius: 4px; padding: 1px 4px; margin: 0; appearance: textfield; -moz-appearance: textfield; }
+.play .ctl input.num::-webkit-inner-spin-button, .play .ctl input.num::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.play .ctl input.num:hover:not(:disabled) { border-color: var(--rule); }
+.play .ctl input.num:focus { outline: none; border-color: var(--accent); background: var(--paper); color: var(--ink); }
+.play .ctl input.num:disabled { opacity: 0.45; border-bottom-color: transparent; }
 .play .ctl input[type=range] { width: 100%; accent-color: var(--accent); }
 .play .ctl input[type=range]:disabled { opacity: 0.45; }
 .play .ctl.k { padding-top: 10px; border-top: 1px solid var(--rule); }
@@ -45,6 +53,10 @@ button.chip:focus-visible, .play input:focus-visible { outline: 2px solid var(--
 .play .readout b { color: var(--ink); font-weight: 600; }
 .play .warn { color: var(--s2); font-weight: 600; }
 .play .pg-plots { min-width: 0; }
+.play .pg-legend-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
+.play .pg-legend-row .legend { flex: 1 1 auto; }
+.play label.pg-lock { margin-left: auto; align-items: center; font-size: 0.78rem; color: var(--ink-2); white-space: nowrap; }
+.play label.pg-lock input { margin: 0; }
 .play .pg-sliders { display: grid; gap: 10px; }
 .play .pg-sliders:empty { display: none; }
 .play .pg-bars-title { margin-top: 10px; }
@@ -55,7 +67,7 @@ button.chip:focus-visible, .play input:focus-visible { outline: 2px solid var(--
   .play-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
   .play-grid > .controls, .play-grid > .pg-plots { display: contents; }
   .play .pg-sliders { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 14px; }
-  .play .presets { order: 1; } .play .pg-stellar { order: 2; } .play #pg-legend { order: 3; } .play #pg-spec { order: 4; }
+  .play .presets { order: 1; } .play .pg-stellar { order: 2; } .play .pg-legend-row { order: 3; } .play #pg-spec { order: 4; }
   .play .pg-abund { order: 5; } .play .pg-tie { order: 6; } .play .hint { order: 7; } .play .ctl.k { order: 8; }
   .play .pg-cmp { order: 9; } .play #pg-res { order: 10; } .play .pg-bars-title { order: 11; } .play #pg-bars { order: 12; }
   .play #pg-readout { order: 13; }
