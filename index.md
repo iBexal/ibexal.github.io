@@ -64,14 +64,14 @@ layout: default
 </div>
 
 <div class="timeline-item">
-    <h3>Chemical Signatures of Exoplanet Host Stars</h3>
+    <h3>Spectrum Emulator</h3>
     <p>
-        Determining the chemical abundances of stars hosting
-        exoplanets of differing masses.
+        A neural-network emulator of stellar spectra, standing in for
+        the Korg synthesis code and running live in your browser.
     </p>
     <p>
-        <a href="/research/#exoplanets">
-            Read more →
+        <a href="/emulator/">
+            Try it →
         </a>
     </p>
 </div>
@@ -88,6 +88,19 @@ layout: default
         </p>
 </div>
 <!--
+<div class="timeline-item">
+    <h3>Chemical Signatures of Exoplanet Host Stars</h3>
+    <p>
+        Determining the chemical abundances of stars hosting
+        exoplanets of differing masses.
+    </p>
+    <p>
+        <a href="/research/#exoplanets">
+            Read more →
+        </a>
+    </p>
+</div>
+
 <div class="timeline-item">
     <h3>Extracting Milky Way Stellar Populations using t-SNE</h3>
     <p>
