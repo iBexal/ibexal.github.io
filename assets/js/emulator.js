@@ -110,7 +110,7 @@ function mountPlayground(root, P) {
     layers: p.layers.map(L => ({ n_in: L.n_in, n_out: L.n_out, W: f32(L.W), b: f32(L.b) })) });
   const E = decode(P), C = P.compare ? decode(P.compare) : null;
   const n = E.n, K = E.K, labels = P.labels, nl = labels.length;
-  const WL = f32(P.wl), wl = Array.from(WL), TRAIN = f32(P.train);
+  const WL = f32(P.wl), wl = Array.from(WL), TRAIN = P.train ? f32(P.train) : null;   // training labels: optional (not on the website)
   const split = ['MG_FE', 'SI_FE', 'TI_FE'].map(k => labels.indexOf(k)).filter(i => i >= 0), ia = labels.indexOf('ALPHA_FE');
   const Ang = v => v.toFixed(1) + ' Å';
 
@@ -201,14 +201,14 @@ function mountPlayground(root, P) {
     const c = cmp && cmp.checked ? emulate(C, theta.slice(0, C.lo.length), C.K) : null;
     let se = 0, sc = 0; for (let p = 0; p < n; p++) { se += (r.part[p] - r.full[p]) ** 2; if (c) sc += (c.full[p] - r.full[p]) ** 2; }
     S = { r, kk, cmp: c }; drawSpec(); drawRes(); drawBars();
-    const dist = nnDist(theta);
+    const dist = TRAIN ? nnDist(theta) : null;
     q('#pg-legend').innerHTML = `<span><i class="line" style="background:var(--ink)"></i>Emulator, all ${K} components</span>` +
       (kk < K ? `<span><i class="line" style="background:var(--s2)"></i>First ${kk} components only</span>` : '') +
       (c ? `<span><i class="line" style="background:var(--ink-3)"></i>${P.compare.short} (dashed)</span>` : '');
     q('#pg-readout').innerHTML = (kk < K ? `<span>First ${kk} against all ${K}: RMS <b>${sci(Math.sqrt(se / n), 2)}</b></span>` : '') +
       (c ? `<span>${P.compare.short} against this one: RMS <b>${sci(Math.sqrt(sc / n), 2)}</b></span>` : '') +
       `<span>One evaluation: <b>${ms.toFixed(1)} ms</b> in this browser</span>` +
-      `<span>Nearest training spectrum: <b>${dist.toFixed(3)}</b> box units ${dist > P.nn_cut ? `<span class="warn">· beyond the fit's library cut (${P.nn_cut.toFixed(3)})</span>` : '· inside the library cut'}</span>`;
+      (dist === null ? '' : `<span>Nearest training spectrum: <b>${dist.toFixed(3)}</b> box units ${dist > P.nn_cut ? `<span class="warn">· beyond the fit's library cut (${P.nn_cut.toFixed(3)})</span>` : '· inside the library cut'}</span>`);
   }
   root.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => {
     const p = P.presets[+b.dataset.preset].theta; inputs.forEach((x, i) => { x.value = p[i]; });
