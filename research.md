@@ -135,3 +135,7 @@ Deianira takes wavelength calibrated orders and does an attempt at flat fielding
 <a href="https://github.com/qai11/Deianira">Check it out here!</a>
 
 </div>
+
+<h2 id="emulator">Spectrum Emulator</h2>
+<p>An interactive version of the neural-network emulator I use to fit AAOmega Ca II triplet spectra. It stands in for the spectral synthesis code Korg: change the stellar labels and watch the spectrum, its principal components and the network's outputs respond, live in your browser.</p>
+<a href="/emulator/">Try the emulator here!</a>

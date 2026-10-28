@@ -1,0 +1,47 @@
+/* Spectrum emulator page: built by emulator_project/spectrophot/explainer/build.py from website.css and
+   playground.css. Do not edit here. */
+/* Website emulator page: the site's own palette (assets/css/style.css :root) mapped onto the playground's
+   tokens, so the page follows the site's colours; --accent is the site's own. build.py appends playground.css. */
+.emu-page {
+  --paper: var(--background); --panel: var(--surface); --ink: var(--heading); --ink-2: var(--text);
+  --ink-3: var(--muted); --rule: var(--border);
+  --s1: #3987e5; --s2: #d95926;
+  --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+.emu-page .lede { font-size: 1.15rem; color: var(--ink-2); }
+.emu-page .loading { color: var(--ink-3); margin: 0; }
+.emu-page .credits { color: var(--ink-3); font-size: 0.9rem; }
+/* Emulator playground and the chart furniture it shares with the explainer (build.py inlines this file).
+   Uses the page's tokens: --paper --panel --ink --ink-2 --ink-3 --rule --accent --s1 --s2 --font-display --font-mono */
+.ctitle { font-family: var(--font-display); font-size: 0.88rem; font-weight: 600; color: var(--ink); margin: 0 0 2px; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-family: var(--font-display); font-size: 0.8rem; color: var(--ink-2); margin: 4px 0 6px; }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
+.legend i.line { height: 3px; border-radius: 2px; vertical-align: 3px; width: 16px; }
+.legend i.ring { background: transparent !important; border: 2px solid var(--ink); border-radius: 50%; }
+.chart { position: relative; width: 100%; min-width: 0; }
+.chart svg text { font-family: var(--font-display); }
+.tip { position: absolute; pointer-events: none; background: var(--panel); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px;
+  padding: 6px 9px; font: 500 0.76rem/1.45 var(--font-display); box-shadow: 0 4px 14px rgba(0,0,0,0.18); white-space: nowrap; z-index: 5; font-variant-numeric: tabular-nums; }
+.tip i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 5px; }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+button.chip { font: 600 0.76rem var(--font-display); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 10px; cursor: pointer; }
+button.chip:hover { border-color: var(--accent); color: var(--accent); }
+button.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+button.chip:focus-visible, .play input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.play { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; margin: 18px 0 26px; }
+.play-grid { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 22px; }
+.play .controls { display: grid; gap: 10px; align-content: start; }
+.play .ctl label { display: flex; justify-content: space-between; font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; color: var(--ink); }
+.play .ctl label output { font-family: var(--font-mono); font-weight: 400; font-size: 0.8rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.play .ctl input[type=range] { width: 100%; accent-color: var(--accent); }
+.play .ctl input[type=range]:disabled { opacity: 0.45; }
+.play .ctl.k { padding-top: 10px; border-top: 1px solid var(--rule); }
+.play label.tie { display: flex; gap: 8px; align-items: flex-start; font-family: var(--font-display); font-size: 0.82rem; color: var(--ink); line-height: 1.35; cursor: pointer; }
+.play label.tie input { accent-color: var(--accent); margin: 2px 0 0; }
+.play .hint { font-family: var(--font-display); font-size: 0.76rem; color: var(--ink-3); line-height: 1.4; margin: -4px 0 0; }
+.play .readout { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--font-display); font-size: 0.8rem; color: var(--ink-2); margin-top: 6px; font-variant-numeric: tabular-nums; }
+.play .readout b { color: var(--ink); font-weight: 600; }
+.play .warn { color: var(--s2); font-weight: 600; }
+@media (max-width: 760px) { .play-grid { grid-template-columns: 1fr; } .play-grid > div:last-child { order: -1; } }   /* charts above the sliders */
