@@ -55,8 +55,8 @@ button.chip:focus-visible, .play input:focus-visible { outline: 2px solid var(--
 .play .pg-plots { min-width: 0; }
 .play .pg-legend-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; }
 .play .pg-legend-row .legend { flex: 1 1 auto; }
-.play label.pg-lock { margin-left: auto; align-items: center; font-size: 0.78rem; color: var(--ink-2); white-space: nowrap; }
-.play label.pg-lock input { margin: 0; }
+.play label.pg-autoy { margin-left: auto; align-items: center; font-size: 0.78rem; color: var(--ink-2); white-space: nowrap; }
+.play label.pg-autoy input { margin: 0; }
 .play .pg-sliders { display: grid; gap: 10px; }
 .play .pg-sliders:empty { display: none; }
 .play .pg-bars-title { margin-top: 10px; }

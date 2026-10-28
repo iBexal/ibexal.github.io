@@ -146,7 +146,7 @@ function mountPlayground(root, P) {
       ${C ? `<label class="tie pg-cmp"><input type="checkbox" id="pg-cmp"> ${P.compare.title}</label>` : ''}
     </div>
     <div class="pg-plots">
-      <div class="pg-legend-row"><div class="legend" id="pg-legend"></div><label class="tie pg-lock"><input type="checkbox" id="pg-lock"> Lock y-axis to 0–1</label></div>
+      <div class="pg-legend-row"><div class="legend" id="pg-legend"></div><label class="tie pg-autoy"><input type="checkbox" id="pg-autoy" checked> Auto-scale y-axis</label></div>
       <div class="chart" id="pg-spec"></div>
       <div class="chart" id="pg-res"></div>
       <p class="ctitle pg-bars-title">Network outputs: c<sub>k</sub> / scale<sub>k</sub> for each of the ${K} components</p>
@@ -159,7 +159,7 @@ function mountPlayground(root, P) {
     w.innerHTML = `<div class="row"><label for="pg-sl-${i}">${name}</label><span class="val"><input class="num" type="number" step="any" min="${E.lo[i]}" max="${E.hi[i]}" id="pg-num-${i}" aria-label="${name} value">${unit ? `<span class="unit">${unit}</span>` : ''}</span></div>` +
       `<input type="range" id="pg-sl-${i}" min="${E.lo[i]}" max="${E.hi[i]}" step="${step}" value="${P.presets[d0].theta[i]}">`;
     q(ABUND.includes(lab) ? '.pg-abund' : '.pg-stellar').appendChild(w); return w.querySelector('input[type=range]'); });
-  const kIn = q('#pg-k'), tie = q('#pg-tie'), cmp = q('#pg-cmp'), lock = q('#pg-lock');
+  const kIn = q('#pg-k'), tie = q('#pg-tie'), cmp = q('#pg-cmp'), autoY = q('#pg-autoy');
   const nums = labels.map((_, i) => q('#pg-num-' + i)), kNum = q('#pg-num-k');
   const decs = labels.map(lab => (INFO[lab] || [0, 0, 0, 2])[3]);
   let S = null;
@@ -167,7 +167,7 @@ function mountPlayground(root, P) {
   const drawSpec = chart(q('#pg-spec'), host => { if (!S) return;
     const ys = [S.r.full, S.kk < K ? S.r.part : null, S.cmp ? S.cmp.full : null].filter(Boolean);
     let lo = Infinity, hi = -Infinity; for (const a of ys) for (const v of a) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
-    const F = frame(host, { height: host.clientWidth < 520 ? 200 : 250, x: { min: WL[0], max: WL[n - 1], label: '' }, y: lock.checked ? { min: 0, max: 1.02, ticks: [0, 0.2, 0.4, 0.6, 0.8, 1], label: 'normalised flux' }   // locked: 0-1 (a little headroom for the continuum)
+    const F = frame(host, { height: host.clientWidth < 520 ? 200 : 250, x: { min: WL[0], max: WL[n - 1], label: '' }, y: !autoY.checked ? { min: 0, max: 1.02, ticks: [0, 0.2, 0.4, 0.6, 0.8, 1], label: 'normalised flux' }   // locked: 0-1 (a little headroom for the continuum)
       : { min: Math.max(0, lo - 0.04), max: Math.min(1.15, hi + 0.04), label: 'normalised flux', n: 5 }, margin: { b: 22 }, aria: 'Emulated spectrum' });
     for (const l of CAT) vline(F, l);
     const ser = [];
@@ -229,7 +229,7 @@ function mountPlayground(root, P) {
     num.addEventListener('change', () => commit(num, slider, dec));
     num.addEventListener('keydown', e => { if (e.key === 'Enter') num.blur(); }); });
   [tie, cmp].forEach(x => x && x.addEventListener('change', update));
-  lock.addEventListener('change', () => drawSpec());
+  autoY.addEventListener('change', () => drawSpec());
   emulate(E, P.presets[d0].theta, K);   // warm-up, so the displayed timing is not the first (slow) call
   update();
 }

@@ -3,9 +3,11 @@ layout: page
 title: Spectrum Emulator
 permalink: /emulator/
 ---
-<link rel="stylesheet" href="{{ '/assets/css/emulator.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/emulator.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <!-- This page is yours to edit: build.py --site only creates it when it is missing and otherwise updates
-     assets/css/emulator.css, assets/js/emulator.js and assets/data/emulator.json. -->
+     assets/css/emulator.css, assets/js/emulator.js and assets/data/emulator.json.
+     ?v=<build time> on those three links makes every deploy fetch them fresh, so a browser never mixes a cached
+     old file with a new one (GitHub Pages lets browsers cache them for 10 minutes). -->
 
 <div class="emu-page">
 <h1>Spectrum emulator</h1>
@@ -26,7 +28,7 @@ permalink: /emulator/
 
 <p>Move the sliders to change the star. Lower K to keep only the first principal components and see how much of the spectrum they carry; the bars show the network's outputs, one per component. This is work in progress: the emulator is still being validated.</p>
 
-<div class="play" id="play-root" data-src="{{ '/assets/data/emulator.json' | relative_url }}"><p class="loading">Loading the emulator (about 2 MB)…</p></div>
+<div class="play" id="play-root" data-src="{{ '/assets/data/emulator.json' | relative_url }}?v={{ site.time | date: '%s' }}"><p class="loading">Loading the emulator (about 2 MB)…</p></div>
 
 <h2>What to look for</h2>
 <ul>
@@ -39,4 +41,4 @@ permalink: /emulator/
 <p class="credits">Spectral synthesis: Korg (Wheeler et al. 2023). Model atmospheres: MARCS (Gustafsson et al. 2008). Line list: Gaia-ESO (Heiter et al. 2021), recalibrated on the Sun and Arcturus.</p>
 </div>
 
-<script src="{{ '/assets/js/emulator.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/emulator.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
