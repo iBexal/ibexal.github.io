@@ -12,9 +12,9 @@ permalink: /emulator/
 <p class="lede">A neural network that stands in for a stellar spectral synthesis code, running live in your browser.</p>
 
 <p>I fit low signal-to-noise spectra of stars in globular clusters and stellar streams observed with the AAOmega spectrograph
-  on the Anglo-Australian Telescope. Its red arm covers the Ca II triplet, 8440-8785 Å, at a resolving power of about 10 500. 
-  Fitting one spectrum properly takes tens of thousands of model spectra, far too many to synthesise star by star, 
-  so I train an emulator once and fit with that.</p>
+  on the Anglo-Australian Telescope. Its red arm covers the infrared Ca triplet, 8440 - 8785 Å, at a resolving power of about 10,500. 
+  Fitting one spectrum properly can take hundres of model spectra and many time-expensive iterations, 
+  so I train an emulator once and fit quickly with that.</p>
 
 <!-- <p>This emulator learned from about 6 000 spectra computed with <a href="https://github.com/ajwheeler/Korg.jl">Korg</a>, 
   MARCS model atmospheres and a line list calibrated on the Sun and Arcturus. 
@@ -30,11 +30,10 @@ permalink: /emulator/
 
 <h2>What to look for</h2>
 <ul>
-  <li>The three Ca II triplet lines (dashed, at 8498, 8542 and 8662 Å) dominate. They strengthen with metallicity and with [α/Fe], which in this model sets the calcium abundance.</li>
-  <li>Untie [Mg/Fe], [Si/Fe] and [Ti/Fe] to move their weak lines on their own, for example the Si I lines near 8728, 8742 and 8752 Å.</li>
+  <li>The three Ca II triplet lines (dashed lines at 8498, 8542, and 8662 Å) dominate. They strengthen with metallicity and with [α/Fe], which in this model sets the calcium abundance.</li>
+  <li>Untie [Mg/Fe], [Si/Fe] and [Ti/Fe] to move their lines on their own, for example the Si I lines near 8728, 8742, and 8752 Å.</li>
   <li>In hotter stars the hydrogen Paschen lines appear, such as P12 at 8750 Å.</li>
   <li>Ten principal components already reproduce the spectrum to about 0.4% of the continuum; all 111 reach 0.01%.</li>
-  <li>Macroturbulence (vmac) barely changes the spectrum: at this resolution the spectrograph's own broadening dominates the line widths.</li>
 </ul>
 
 <p class="credits">Spectral synthesis: Korg (Wheeler et al. 2023). Model atmospheres: MARCS (Gustafsson et al. 2008). Line list: Gaia-ESO (Heiter et al. 2021), recalibrated on the Sun and Arcturus.</p>
