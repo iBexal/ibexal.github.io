@@ -44,4 +44,20 @@ button.chip:focus-visible, .play input:focus-visible { outline: 2px solid var(--
 .play .readout { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--font-display); font-size: 0.8rem; color: var(--ink-2); margin-top: 6px; font-variant-numeric: tabular-nums; }
 .play .readout b { color: var(--ink); font-weight: 600; }
 .play .warn { color: var(--s2); font-weight: 600; }
-@media (max-width: 760px) { .play-grid { grid-template-columns: 1fr; } .play-grid > div:last-child { order: -1; } }   /* charts above the sliders */
+.play .pg-plots { min-width: 0; }
+.play .pg-sliders { display: grid; gap: 10px; }
+.play .pg-sliders:empty { display: none; }
+.play .pg-bars-title { margin-top: 10px; }
+/* Phones: one column, interleaved so the spectrum sits between the sliders that move it most:
+   example stars + stellar parameters, spectrum, abundances, K, then the PCA plots. Sliders two to a row. */
+@media (max-width: 760px) {
+  .play { padding: 14px; }
+  .play-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .play-grid > .controls, .play-grid > .pg-plots { display: contents; }
+  .play .pg-sliders { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 14px; }
+  .play .presets { order: 1; } .play .pg-stellar { order: 2; } .play #pg-legend { order: 3; } .play #pg-spec { order: 4; }
+  .play .pg-abund { order: 5; } .play .pg-tie { order: 6; } .play .hint { order: 7; } .play .ctl.k { order: 8; }
+  .play .pg-cmp { order: 9; } .play #pg-res { order: 10; } .play .pg-bars-title { order: 11; } .play #pg-bars { order: 12; }
+  .play #pg-readout { order: 13; }
+  .play .hint { margin: 0; }
+}

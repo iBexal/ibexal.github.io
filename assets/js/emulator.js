@@ -104,6 +104,7 @@ function mountPlayground(root, P) {
     VMACRO: ['vmac', 'km/s', 0.1, 1], ALPHA_FE: ['[α/Fe]', '', 0.01, 2], MG_FE: ['[Mg/Fe]', '', 0.01, 2], SI_FE: ['[Si/Fe]', '', 0.01, 2],
     TI_FE: ['[Ti/Fe]', '', 0.01, 2] };
   const CAT = [8498.02, 8542.09, 8662.14];
+  const ABUND = ['ALPHA_FE', 'MG_FE', 'SI_FE', 'TI_FE'];   // grouped below the spectrum on phones (playground.css)
   const decode = p => ({ n: p.n_pix, K: p.K, lo: p.lo, hi: p.hi, mean: f32(p.mean), V: f32(p.V), cs: f32(p.coef_scale),
     layers: p.layers.map(L => ({ n_in: L.n_in, n_out: L.n_out, W: f32(L.W), b: f32(L.b) })) });
   const E = decode(P), C = P.compare ? decode(P.compare) : null;
@@ -136,17 +137,18 @@ function mountPlayground(root, P) {
   root.innerHTML = `<div class="play-grid">
     <div class="controls">
       <div class="presets" role="group" aria-label="Example stars">${P.presets.map((p, i) => `<button class="chip" type="button" data-preset="${i}" aria-pressed="${i === 0}">${p.name}</button>`).join('')}</div>
-      <div class="pg-sliders"></div>
-      ${split.length ? `<label class="tie"><input type="checkbox" id="pg-tie" checked> Tie [Mg/Fe], [Si/Fe] and [Ti/Fe] to [α/Fe]</label>
-        <p class="hint">In this model [α/Fe] sets O, Ne, S, Ar and Ca, so it drives the Ca II triplet. Mg, Si and Ti have their own labels, you can untie them to move their lines seperately.</p>` : ''}
+      <div class="pg-sliders pg-stellar"></div>
+      <div class="pg-sliders pg-abund"></div>
+      ${split.length ? `<label class="tie pg-tie"><input type="checkbox" id="pg-tie" checked> Tie [Mg/Fe], [Si/Fe] and [Ti/Fe] to [α/Fe]</label>
+        <p class="hint">In this model [α/Fe] sets O, Ne, S, Ar and Ca, so it drives the Ca II triplet. Mg, Si and Ti have their own labels; untie them to move their lines alone.</p>` : ''}
       <div class="ctl k"><label for="pg-k">Components kept, K <output id="pg-out-k">${K}</output></label><input type="range" id="pg-k" min="1" max="${K}" step="1" value="${K}"></div>
-      ${C ? `<label class="tie"><input type="checkbox" id="pg-cmp"> ${P.compare.title}</label>` : ''}
+      ${C ? `<label class="tie pg-cmp"><input type="checkbox" id="pg-cmp"> ${P.compare.title}</label>` : ''}
     </div>
-    <div style="min-width:0">
+    <div class="pg-plots">
       <div class="legend" id="pg-legend"></div>
       <div class="chart" id="pg-spec"></div>
       <div class="chart" id="pg-res"></div>
-      <p class="ctitle" style="margin-top:10px">Network outputs: c<sub>k</sub> / scale<sub>k</sub> for each of the ${K} components</p>
+      <p class="ctitle pg-bars-title">Network outputs: c<sub>k</sub> / scale<sub>k</sub> for each of the ${K} components</p>
       <div class="chart" id="pg-bars"></div>
       <div class="readout" id="pg-readout"></div>
     </div></div>`;
@@ -154,14 +156,14 @@ function mountPlayground(root, P) {
   const inputs = labels.map((lab, i) => { const [name, unit, step] = INFO[lab] || [lab, '', 0.01];
     const w = document.createElement('div'); w.className = 'ctl';
     w.innerHTML = `<label for="pg-sl-${i}">${name} <output id="pg-out-${i}"></output></label><input type="range" id="pg-sl-${i}" min="${E.lo[i]}" max="${E.hi[i]}" step="${step}" value="${P.presets[0].theta[i]}">`;
-    q('.pg-sliders').appendChild(w); return w.querySelector('input'); });
+    q(ABUND.includes(lab) ? '.pg-abund' : '.pg-stellar').appendChild(w); return w.querySelector('input'); });
   const kIn = q('#pg-k'), tie = q('#pg-tie'), cmp = q('#pg-cmp');
   let S = null;
 
   const drawSpec = chart(q('#pg-spec'), host => { if (!S) return;
     const ys = [S.r.full, S.kk < K ? S.r.part : null, S.cmp ? S.cmp.full : null].filter(Boolean);
     let lo = Infinity, hi = -Infinity; for (const a of ys) for (const v of a) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
-    const F = frame(host, { height: 250, x: { min: WL[0], max: WL[n - 1], label: '' }, y: { min: Math.max(0, lo - 0.04), max: Math.min(1.15, hi + 0.04), label: 'normalised flux', n: 5 }, margin: { b: 22 }, aria: 'Emulated spectrum' });
+    const F = frame(host, { height: host.clientWidth < 520 ? 200 : 250, x: { min: WL[0], max: WL[n - 1], label: '' }, y: { min: Math.max(0, lo - 0.04), max: Math.min(1.15, hi + 0.04), label: 'normalised flux', n: 5 }, margin: { b: 22 }, aria: 'Emulated spectrum' });
     for (const l of CAT) vline(F, l);
     const ser = [];
     if (S.cmp) { line(F, wl, Array.from(S.cmp.full), 'var(--ink-3)', 1.3, { 'stroke-dasharray': '4 3' }); ser.push({ xs: wl, ys: Array.from(S.cmp.full), color: 'var(--ink-3)', name: P.compare.short }); }
