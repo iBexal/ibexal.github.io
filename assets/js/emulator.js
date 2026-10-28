@@ -104,7 +104,8 @@ function mountPlayground(root, P) {
     VMACRO: ['vmac', 'km/s', 0.1, 1], ALPHA_FE: ['[α/Fe]', '', 0.01, 2], MG_FE: ['[Mg/Fe]', '', 0.01, 2], SI_FE: ['[Si/Fe]', '', 0.01, 2],
     TI_FE: ['[Ti/Fe]', '', 0.01, 2] };
   const CAT = [8498.02, 8542.09, 8662.14];
-  const ABUND = ['ALPHA_FE', 'MG_FE', 'SI_FE', 'TI_FE'];   // grouped below the spectrum on phones (playground.css)
+  const ABUND = ['ALPHA_FE', 'MG_FE', 'SI_FE', 'TI_FE'];
+  const d0 = Math.max(0, P.presets.findIndex(p => p.name === P.start));   // the example star it opens on   // grouped below the spectrum on phones (playground.css)
   const decode = p => ({ n: p.n_pix, K: p.K, lo: p.lo, hi: p.hi, mean: f32(p.mean), V: f32(p.V), cs: f32(p.coef_scale),
     layers: p.layers.map(L => ({ n_in: L.n_in, n_out: L.n_out, W: f32(L.W), b: f32(L.b) })) });
   const E = decode(P), C = P.compare ? decode(P.compare) : null;
@@ -136,7 +137,7 @@ function mountPlayground(root, P) {
   // ---- controls and chart hosts
   root.innerHTML = `<div class="play-grid">
     <div class="controls">
-      <div class="presets" role="group" aria-label="Example stars">${P.presets.map((p, i) => `<button class="chip" type="button" data-preset="${i}" aria-pressed="${i === 0}">${p.name}</button>`).join('')}</div>
+      <div class="presets" role="group" aria-label="Example stars">${P.presets.map((p, i) => `<button class="chip" type="button" data-preset="${i}" aria-pressed="${i === d0}">${p.name}</button>`).join('')}</div>
       <div class="pg-sliders pg-stellar"></div>
       <div class="pg-sliders pg-abund"></div>
       ${split.length ? `<label class="tie pg-tie"><input type="checkbox" id="pg-tie" checked> Tie [Mg/Fe], [Si/Fe] and [Ti/Fe] to [α/Fe]</label>
@@ -155,7 +156,7 @@ function mountPlayground(root, P) {
   const q = sel => root.querySelector(sel);
   const inputs = labels.map((lab, i) => { const [name, unit, step] = INFO[lab] || [lab, '', 0.01];
     const w = document.createElement('div'); w.className = 'ctl';
-    w.innerHTML = `<label for="pg-sl-${i}">${name} <output id="pg-out-${i}"></output></label><input type="range" id="pg-sl-${i}" min="${E.lo[i]}" max="${E.hi[i]}" step="${step}" value="${P.presets[0].theta[i]}">`;
+    w.innerHTML = `<label for="pg-sl-${i}">${name} <output id="pg-out-${i}"></output></label><input type="range" id="pg-sl-${i}" min="${E.lo[i]}" max="${E.hi[i]}" step="${step}" value="${P.presets[d0].theta[i]}">`;
     q(ABUND.includes(lab) ? '.pg-abund' : '.pg-stellar').appendChild(w); return w.querySelector('input'); });
   const kIn = q('#pg-k'), tie = q('#pg-tie'), cmp = q('#pg-cmp');
   let S = null;
@@ -168,7 +169,8 @@ function mountPlayground(root, P) {
     const ser = [];
     if (S.cmp) { line(F, wl, Array.from(S.cmp.full), 'var(--ink-3)', 1.3, { 'stroke-dasharray': '4 3' }); ser.push({ xs: wl, ys: Array.from(S.cmp.full), color: 'var(--ink-3)', name: P.compare.short }); }
     line(F, wl, Array.from(S.r.full), 'var(--ink)', 1.5); ser.unshift({ xs: wl, ys: Array.from(S.r.full), color: 'var(--ink)', name: `all ${K}` });
-    if (S.kk < K) { line(F, wl, Array.from(S.r.part), 'var(--s2)', 1.5); ser.push({ xs: wl, ys: Array.from(S.r.part), color: 'var(--s2)', name: `first ${S.kk}` }); }
+    // the first-K curve is thinner than the full one, so the full spectrum shows around it where they agree
+    if (S.kk < K) { line(F, wl, Array.from(S.r.part), 'var(--s2)', 1.2); ser.push({ xs: wl, ys: Array.from(S.r.part), color: 'var(--s2)', name: `first ${S.kk}` }); }
     crosshair(F, ser, Ang, v => v.toFixed(4)); });
   const drawRes = chart(q('#pg-res'), host => { if (!S) return;
     const d = Array.from(S.r.part, (v, p) => v - S.r.full[p]); let a = 1e-4; for (const v of d) a = Math.max(a, Math.abs(v));
@@ -210,7 +212,7 @@ function mountPlayground(root, P) {
   inputs.concat([kIn]).forEach(x => x.addEventListener('input', () => {
     if (x !== kIn) root.querySelectorAll('[data-preset]').forEach(o => o.setAttribute('aria-pressed', 'false')); update(); }));
   [tie, cmp].forEach(x => x && x.addEventListener('change', update));
-  emulate(E, P.presets[0].theta, K);   // warm-up, so the displayed timing is not the first (slow) call
+  emulate(E, P.presets[d0].theta, K);   // warm-up, so the displayed timing is not the first (slow) call
   update();
 }
 
